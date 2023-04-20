@@ -1,5 +1,6 @@
 $creamColor: #ffe5a2;
 $bg-blue: #243763;
+$bg-orange: #FF6E31;
 
 *,
 ::after,
@@ -176,6 +177,15 @@ section#hero-section {
         text-align: center;
         margin-top: 16px;
         color: $creamColor;
+      }
+
+      a#btn-show-recipe {
+        display: flex;
+        width: 250px;
+        height: 51px;
+        padding: 12px 24px 12px 12px;
+        background: $bg-orange;
+        border-radius: 100px;
       }
     }
   }

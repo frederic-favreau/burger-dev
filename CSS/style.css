@@ -153,4 +153,12 @@ section#hero-section div#container-hero-section div#item-left-hero p {
   text-align: center;
   margin-top: 16px;
   color: #ffe5a2;
+}
+section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe {
+  display: flex;
+  width: 250px;
+  height: 51px;
+  padding: 12px 24px 12px 12px;
+  background: #FF6E31;
+  border-radius: 100px;
 }/*# sourceMappingURL=style.css.map */

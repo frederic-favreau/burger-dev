@@ -12,7 +12,7 @@ ob_start();
                 <h1>tasty & creamy</h1>
                 <p>Delicious burgers made from
                     high-quality Australian beef, carefully processed to create a juicy and flavorful taste.</p>
-                    <a href="#" id="btn-show-recipe"><img src="./img/picto/bag-2.svg" alt="Sac">voir les recettes</a>
+                <a href="#" id="btn-show-recipe"><img src="./img/picto/bag-2.svg" alt="Sac">voir les recettes</a>
             </div>
             <figcaption id="item-right-hero">
                 <img src="./img/burger-mobile.png" alt="Burger">
