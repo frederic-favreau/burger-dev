@@ -1,5 +1,5 @@
 <?php
-class favorite
+class Favorite
 {
 
     private $userId;

@@ -1,5 +1,5 @@
 <?php
-class ingredient
+class Ingredient
 {
 
     private $name;
