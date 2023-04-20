@@ -69,11 +69,11 @@ class recipe
     {
         $this->description = $description;
     }
-    public function setPreparationTime(int $preparationTime)
+    public function setPreparationTime(DateTime $preparationTime)
     {
         $this->preparationTime = $preparationTime;
     }
-    public function setCookingTime(int $cookingTime)
+    public function setCookingTime(DateTime $cookingTime)
     {
         $this->cookingTime = $cookingTime;
     }
