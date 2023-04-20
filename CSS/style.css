@@ -6,7 +6,11 @@
   box-sizing: border-box;
 }
 
-.row-size-limmit {
+body {
+  font-family: "PT Serif", sans-serif;
+}
+
+.row-limit-size {
   width: 100%;
   max-width: 1233px;
   margin: 0 auto;
@@ -20,6 +24,94 @@ ul {
   list-style-type: none;
 }
 
-header nav ul {
+header nav {
+  background-color: #243763;
+}
+header nav div#container-nav-top {
+  width: 90%;
+  height: 80px;
   display: flex;
+  align-items: center;
+}
+header nav div#container-nav-top div#group-logo {
+  margin-right: auto;
+}
+header nav div#container-nav-top div#group-logo a {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffe5a2;
+}
+header nav div#container-nav-top div#menu-nav ul {
+  display: none;
+}
+@media screen and (min-width: 950px) {
+  header nav div#container-nav-top div#menu-nav ul {
+    display: flex;
+  }
+}
+header nav div#container-nav-top div#menu-nav ul li {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+header nav div#container-nav-top div#menu-nav ul li a {
+  font-family: "Ultra";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffe5a2;
+}
+header nav div#container-nav-top div#menu-picto {
+  margin-left: auto;
+}
+header nav div#container-nav-top div#menu-picto ul {
+  display: flex;
+}
+header nav div#container-nav-top div#menu-picto ul li#picto-favorite,
+header nav div#container-nav-top div#menu-picto ul li#picto-profile {
+  display: none;
+}
+@media screen and (min-width: 950px) {
+  header nav div#container-nav-top div#menu-picto ul li#picto-favorite,
+  header nav div#container-nav-top div#menu-picto ul li#picto-profile {
+    display: block;
+  }
+}
+header nav div#container-nav-top div#menu-picto ul li#picto-burger {
+  display: block;
+}
+@media screen and (min-width: 950px) {
+  header nav div#container-nav-top div#menu-picto ul li#picto-burger {
+    display: none;
+  }
+}
+@media screen and (min-width: 950px) {
+  header nav div#container-nav-top div#menu-picto ul li {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+header nav div#container-nav-top div#menu-picto ul li a img {
+  width: 24px;
+  height: auto;
+}
+header nav div#container-nav-top div#menu-picto ul li a div#container-menu-buger {
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 950px) {
+  header nav div#container-nav-top div#menu-picto ul li a div#container-menu-buger {
+    display: none;
+  }
+}
+header nav div#container-nav-top div#menu-picto ul li a div#container-menu-buger div.item-common-burger {
+  width: 18px;
+  height: 2px;
+  background-color: #ffe5a2;
 }/*# sourceMappingURL=style.css.map */

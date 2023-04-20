@@ -1,3 +1,6 @@
+$creamColor: #ffe5a2;
+$bg-blue: #243763;
+
 *,
 ::after,
 ::before {
@@ -6,7 +9,11 @@
   box-sizing: border-box;
 }
 
-.row-size-limmit {
+body {
+  font-family: "PT Serif", sans-serif;
+}
+
+.row-limit-size {
   width: 100%;
   max-width: 1233px;
   margin: 0 auto;
@@ -24,8 +31,107 @@ ul {
 
 header {
   nav {
-    ul {
-        display: flex;
+    background-color: $bg-blue;
+
+    div#container-nav-top {
+      width: 90%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+
+      div#group-logo {
+        margin-right: auto;
+
+        a {
+          font-family: "Ultra";
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          text-transform: uppercase;
+          color: $creamColor;
+        }
+      }
+
+      div#menu-nav {
+        ul {
+          display: none;
+
+          @media screen and (min-width: 950px) {
+            display: flex;
+          }
+
+          li {
+            margin-left: 16px;
+            margin-right: 16px;
+
+            a {
+              font-family: "Ultra";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: uppercase;
+              color: $creamColor;
+            }
+          }
+        }
+      }
+
+      div#menu-picto {
+        margin-left: auto;
+
+        ul {
+          display: flex;
+
+          li#picto-favorite,
+          li#picto-profile {
+            display: none;
+
+            @media screen and (min-width: 950px) {
+              display: block;
+            }
+          }
+
+          li#picto-burger {
+            display: block;
+
+            @media screen and (min-width: 950px) {
+              display: none;
+            }
+          }
+
+          li {
+            @media screen and (min-width: 950px) {
+              margin-left: 16px;
+              margin-right: 16px;
+            }
+
+            a {
+              img {
+                width: 24px;
+                height: auto;
+              }
+
+              div#container-menu-buger {
+                height: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                @media screen and (min-width: 950px) {
+                  display: none;
+                }
+
+                div.item-common-burger {
+                  width: 18px;
+                  height: 2px;
+                  background-color: $creamColor;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
