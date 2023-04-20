@@ -1,4 +1,6 @@
 <?php
+
+$style = './CSS/style.css';
 $title = "Burger dev";
 ob_start();
 ?>

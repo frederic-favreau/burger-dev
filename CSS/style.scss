@@ -1,0 +1,31 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row-size-limmit {
+  width: 100%;
+  max-width: 1233px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// ------------ header section ------------
+
+header {
+  nav {
+    ul {
+        display: flex;
+    }
+  }
+}

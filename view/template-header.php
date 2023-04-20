@@ -1,5 +1,5 @@
 <header>
-    <nav id="nav-top">
+    <nav id="nav-top" class="row-size-limit">
         <div id="group-logo">
             <a href="#">Burger dev</a>
         </div>
