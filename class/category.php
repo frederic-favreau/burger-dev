@@ -32,7 +32,7 @@ class Category
     }
 
     //SETTERS  
-    public function setName(int $name)
+    public function setName(string $name)
     {
         $this->name = $name;
     }

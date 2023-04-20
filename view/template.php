@@ -7,8 +7,9 @@
     <title><?= $title ?></title>
 </head>
 <body>
-    <?= $header ?>
+    <?php
+include_once './view/template-header.php';
+?>
     <?= $content ?>
-    <?= $footer ?>
 </body>
 </html>
