@@ -17,13 +17,11 @@ ob_start();
             <figcaption id="item-right-hero">
                 <img src="./img/burger-mobile.png" alt="Burger">
             </figcaption>
-
         </div>
-
     </section>
 </main>
 <div class="row">
-    <h1><?= $title ?></h1>
+    <h1>Najia</h1>
     <div class="posts">
         coucou
     </div>

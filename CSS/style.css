@@ -35,6 +35,11 @@ h1 {
   color: #ffe5a2;
 }
 
+header {
+  mix-blend-mode: overlay;
+  opacity: 1;
+  background-image: url(../img/burger-mobile.png);
+}
 header nav {
   border-bottom: 0.5px solid #ffe5a2;
   background-color: #243763;
