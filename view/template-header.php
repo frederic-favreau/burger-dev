@@ -27,7 +27,6 @@
                             <div class="item-common-burger"></div>
                         </div>
                     </a></li>
-
                 </ul>
             </div>
         </div>
