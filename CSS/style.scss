@@ -1,6 +1,8 @@
 $creamColor: #ffe5a2;
 $bg-blue: #243763;
 $bg-orange: #FF6E31;
+$a-color: #FFE5A5;
+
 
 *,
 ::after,
@@ -22,6 +24,8 @@ body {
 
 a {
   text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 ul {
@@ -155,9 +159,10 @@ header {
 }
 
 // ------------ hero section ------------
-
 section#hero-section {
   background-color: $bg-blue;
+  padding-bottom: 80px;
+
   div#container-hero-section {
     width: 90%;
     display: flex;
@@ -186,11 +191,20 @@ section#hero-section {
 
       a#btn-show-recipe {
         display: flex;
+        margin: 15px auto 30px;
         width: 250px;
         height: 51px;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
         padding: 12px 24px 12px 12px;
         background: $bg-orange;
+        color: $a-color;
         border-radius: 100px;
+
+        img {
+          margin-right: 8px;
+        }
       }
     }
   }

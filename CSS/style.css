@@ -18,6 +18,8 @@ body {
 
 a {
   text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 ul {
@@ -135,6 +137,7 @@ header nav div#container-nav-top div#menu-picto ul li a div#container-menu-buger
 
 section#hero-section {
   background-color: #243763;
+  padding-bottom: 80px;
 }
 section#hero-section div#container-hero-section {
   width: 90%;
@@ -161,9 +164,17 @@ section#hero-section div#container-hero-section div#item-left-hero p {
 }
 section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe {
   display: flex;
+  margin: 15px auto 30px;
   width: 250px;
   height: 51px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
   padding: 12px 24px 12px 12px;
   background: #FF6E31;
+  color: #FFE5A5;
   border-radius: 100px;
+}
+section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe img {
+  margin-right: 8px;
 }/*# sourceMappingURL=style.css.map */
