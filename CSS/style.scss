@@ -50,6 +50,12 @@ h2 {
   line-height: 150%;
   text-align: center;
   color: $title-color;
+
+  @media screen and (min-width: 950px) {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 100%;
+  }
 }
 
 h3 {
@@ -58,6 +64,7 @@ h3 {
   font-size: 16px;
   line-height: 124%;
   color: $title-color;
+
 }
 
 // ------------ header section ------------
@@ -229,7 +236,7 @@ section#hero-section {
 
       a#btn-show-recipe {
         display: flex;
-        margin: 15px auto 30px;
+        margin: 25px auto 40px;
         width: 250px;
         height: 51px;
         justify-content: center;
@@ -312,13 +319,24 @@ section#last-recipe-section {
   }
 
   div#container-card-last-recipe {
-    width: 220px;
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
     text-align: center;
+
+    @media screen and (min-width: 750px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
     div#card-last-recipe {
       position: relative;
-      margin-bottom: 100px;
+      width: 220px;
+      margin: 0 20px 120px 20px;
+      display: flex;
+      flex-direction: column;
 
       h2#title-last-recipe-section {
         text-decoration: underline;
@@ -336,12 +354,16 @@ section#last-recipe-section {
         background-position: 50%;
         border-radius: 25px;
 
+        @media screen and (min-width: 750px) {
+          height: 120px;
+        }
+
         img {
           position: absolute;
           width: 80%;
           height: auto;
           top: -60px;
-          left: 16px;
+          left: 18px;
         }
       }
 

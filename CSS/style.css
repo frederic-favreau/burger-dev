@@ -44,6 +44,13 @@ h2 {
   text-align: center;
   color: #ffebb7;
 }
+@media screen and (min-width: 950px) {
+  h2 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 100%;
+  }
+}
 
 h3 {
   font-family: "Ultra", sans-serif;
@@ -203,7 +210,7 @@ section#hero-section div#container-hero-section div#item-left-hero p {
 }
 section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe {
   display: flex;
-  margin: 15px auto 30px;
+  margin: 25px auto 40px;
   width: 250px;
   height: 51px;
   justify-content: center;
@@ -279,13 +286,25 @@ section#last-recipe-section {
   }
 }
 section#last-recipe-section div#container-card-last-recipe {
-  width: 220px;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
   text-align: center;
+}
+@media screen and (min-width: 750px) {
+  section#last-recipe-section div#container-card-last-recipe {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 section#last-recipe-section div#container-card-last-recipe div#card-last-recipe {
   position: relative;
-  margin-bottom: 100px;
+  width: 220px;
+  margin: 0 20px 120px 20px;
+  display: flex;
+  flex-direction: column;
 }
 section#last-recipe-section div#container-card-last-recipe div#card-last-recipe h2#title-last-recipe-section {
   text-decoration: underline;
@@ -301,12 +320,17 @@ section#last-recipe-section div#container-card-last-recipe div#card-last-recipe 
   background-position: 50%;
   border-radius: 25px;
 }
+@media screen and (min-width: 750px) {
+  section#last-recipe-section div#container-card-last-recipe div#card-last-recipe figcaption {
+    height: 120px;
+  }
+}
 section#last-recipe-section div#container-card-last-recipe div#card-last-recipe figcaption img {
   position: absolute;
   width: 80%;
   height: auto;
   top: -60px;
-  left: 16px;
+  left: 18px;
 }
 section#last-recipe-section div#container-card-last-recipe div#card-last-recipe p {
   font-weight: 700;
