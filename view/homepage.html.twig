@@ -1,34 +1,106 @@
-{% extends "template.html.twig" %}
-{% block title %}Burger dev{% endblock %}
-{% block style %}<link href='./CSS/style.css' rel="stylesheet">{% endblock %}
-
-
-{% block content %}
+{% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %} {%
+block style %}<link href="./CSS/style.css" rel="stylesheet" />
+{% endblock %} {% block content %}
 <main>
-    {# ---------- Hero section ---------- #}
+  {# ---------- Hero section ---------- #}
 
-    <section id="hero-section">
-        <div id="container-hero-section" class="row-limit-size">
-            <div id="item-left-hero">
-                <span>Recettes Burger</span>
-                <h1>tasty & creamy</h1>
-                <p>Delicious burgers made from
-                    high-quality Australian beef, carefully processed to create a juicy and flavorful taste.</p>
-                <a href="#" id="btn-show-recipe"><img src="./img/picto/bag-2.svg" alt="Sac">voir les recettes</a>
-            </div>
-            <figcaption id="item-right-hero">
-                <img src="./img/burger-mobile.png" alt="Burger">
-            </figcaption>
+  <section id="hero-section">
+    <div id="container-hero-section" class="row-limit-size">
+      <div id="item-left-hero">
+        <span>Recettes Burger</span>
+        <h1>tasty & creamy</h1>
+        <p>
+          Delicious burgers made from high-quality Australian beef, carefully
+          processed to create a juicy and flavorful taste.
+        </p>
+        <a href="#" id="btn-show-recipe"
+          ><img src="./img/picto/bag-2.svg" alt="Sac" />voir les recettes</a
+        >
+      </div>
+      <figcaption id="item-right-hero">
+        <img src="./img/burger-mobile.png" alt="Burger" />
+      </figcaption>
+    </div>
+  </section>
+
+  {# ---------- Last-recipe section ---------- #}
+
+  <section id="last-recipe-section">
+    <h2 id="title-last-recipe-section">Dernieres recettes bugers</h2>
+    <div id="container-card-last-recipe" class="row-limit-size">
+      <div id="card-last-recipe">
+        <figcaption>
+          <img src="./img/picto/pict-burger.svg" alt="burger" />
+        </figcaption>
+        <div class="description-card">
+          <h3 id="title-description-card">Titre ici</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            voluptatibus!
+          </p>
         </div>
-    </section>
-
-
-
-    {# ---------- Last-recipe section ---------- #}
-
-    <section id="last-recipe-section">
-    
-    </section>
-
+      </div>
+      <div id="card-last-recipe">
+        <figcaption>
+          <img src="./img/picto/pict-burger.svg" alt="burger" />
+        </figcaption>
+        <div class="description-card">
+          <h3 id="title-description-card">Titre ici</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            voluptatibus!
+          </p>
+        </div>
+      </div>
+      <div id="card-last-recipe">
+        <figcaption>
+          <img src="./img/picto/pict-burger.svg" alt="burger" />
+        </figcaption>
+        <div class="description-card">
+          <h3 id="title-description-card">Titre ici</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            voluptatibus!
+          </p>
+        </div>
+      </div>
+      <div id="card-last-recipe">
+        <figcaption>
+          <img src="./img/picto/pict-burger.svg" alt="burger" />
+        </figcaption>
+        <div class="description-card">
+          <h3 id="title-description-card">Titre ici</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            voluptatibus!
+          </p>
+        </div>
+      </div>
+      <div id="card-last-recipe">
+        <figcaption>
+          <img src="./img/picto/pict-burger.svg" alt="burger" />
+        </figcaption>
+        <div class="description-card">
+          <h3 id="title-description-card">Titre ici</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            voluptatibus!
+          </p>
+        </div>
+      </div>
+      <div id="card-last-recipe">
+        <figcaption>
+          <img src="./img/picto/pict-burger.svg" alt="burger" />
+        </figcaption>
+        <div class="description-card">
+          <h3 id="title-description-card">Titre ici</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            voluptatibus!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 {% endblock %}

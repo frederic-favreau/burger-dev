@@ -37,6 +37,22 @@ h1 {
   color: #ffe5a2;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffebb7;
+}
+
+h3 {
+  font-family: "Ultra", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 124%;
+  color: #ffebb7;
+}
+
 header {
   mix-blend-mode: overlay;
   opacity: 1;
@@ -139,6 +155,11 @@ section#hero-section {
   background-color: #243763;
   padding-bottom: 100px;
 }
+@media screen and (min-width: 950px) {
+  section#hero-section {
+    padding-top: 80px;
+  }
+}
 section#hero-section div#container-hero-section {
   width: 90%;
   display: flex;
@@ -153,6 +174,12 @@ section#hero-section div#container-hero-section {
 @media screen and (min-width: 950px) {
   section#hero-section div#container-hero-section div#item-left-hero {
     width: 50%;
+    position: relative;
+  }
+  section#hero-section div#container-hero-section div#item-left-hero::before {
+    position: absolute;
+    content: url(../img/picto/Ornament-top.svg);
+    top: -40px;
   }
 }
 section#hero-section div#container-hero-section div#item-left-hero span {
@@ -164,6 +191,7 @@ section#hero-section div#container-hero-section div#item-left-hero span {
   text-transform: uppercase;
   margin-top: 28px;
   margin-bottom: 8px;
+  margin: 28px 30px 8px 0;
   color: #ffe5a2;
 }
 section#hero-section div#container-hero-section div#item-left-hero p {
@@ -182,9 +210,14 @@ section#hero-section div#container-hero-section div#item-left-hero a#btn-show-re
   align-items: center;
   text-transform: uppercase;
   padding: 12px 24px 12px 12px;
-  background: #ff6e31;
+  background: #e8652e;
   color: #ffe5a5;
   border-radius: 100px;
+}
+@media screen and (min-width: 950px) {
+  section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe {
+    width: 50%;
+  }
 }
 section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe img {
   margin-right: 8px;
@@ -193,6 +226,11 @@ section#hero-section div#container-hero-section figcaption#item-right-hero {
   position: relative;
   text-align: center;
 }
+@media screen and (min-width: 950px) {
+  section#hero-section div#container-hero-section figcaption#item-right-hero {
+    width: 50%;
+  }
+}
 section#hero-section div#container-hero-section figcaption#item-right-hero::before {
   position: absolute;
   content: url(../img/picto/star.svg);
@@ -200,6 +238,7 @@ section#hero-section div#container-hero-section figcaption#item-right-hero::befo
 @media screen and (min-width: 950px) {
   section#hero-section div#container-hero-section figcaption#item-right-hero::before {
     display: none;
+    width: 50%;
   }
 }
 section#hero-section div#container-hero-section figcaption#item-right-hero::after {
@@ -214,9 +253,64 @@ section#hero-section div#container-hero-section figcaption#item-right-hero::afte
     position: absolute;
     content: url(../img/picto/star.svg);
   }
+  section#hero-section div#container-hero-section figcaption#item-right-hero::after::before {
+    position: absolute;
+    content: url(../img/picto/star.svg);
+  }
 }
 @media screen and (min-width: 950px) {
   section#hero-section div#container-hero-section figcaption#item-right-hero::after {
     width: 50%;
   }
+}
+section#hero-section div#container-hero-section figcaption#item-right-hero img {
+  width: 280px;
+  height: auto;
+}
+
+section#last-recipe-section {
+  background-color: #e8652e;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+@media screen and (min-width: 950px) {
+  section#last-recipe-section {
+    padding-top: 80px;
+  }
+}
+section#last-recipe-section div#container-card-last-recipe {
+  width: 220px;
+  margin-top: 60px;
+  text-align: center;
+}
+section#last-recipe-section div#container-card-last-recipe div#card-last-recipe {
+  position: relative;
+  margin-bottom: 100px;
+}
+section#last-recipe-section div#container-card-last-recipe div#card-last-recipe h2#title-last-recipe-section {
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+section#last-recipe-section div#container-card-last-recipe div#card-last-recipe h3#title-description-card {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+section#last-recipe-section div#container-card-last-recipe div#card-last-recipe figcaption {
+  height: 100px;
+  background-color: #243763;
+  background-position: 50%;
+  border-radius: 25px;
+}
+section#last-recipe-section div#container-card-last-recipe div#card-last-recipe figcaption img {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: -60px;
+  left: 16px;
+}
+section#last-recipe-section div#container-card-last-recipe div#card-last-recipe p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffebb7;
 }/*# sourceMappingURL=style.css.map */

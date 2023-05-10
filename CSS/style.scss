@@ -2,6 +2,8 @@ $creamColor: #ffe5a2;
 $bg-blue: #243763;
 $bg-orange: #ff6e31;
 $a-color: #ffe5a5;
+$bg-orange: #e8652e;
+$title-color: #ffebb7;
 
 *,
 ::after,
@@ -40,6 +42,22 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: $creamColor;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: $title-color;
+}
+
+h3 {
+  font-family: "Ultra", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 124%;
+  color: $title-color;
 }
 
 // ------------ header section ------------
@@ -162,6 +180,10 @@ section#hero-section {
   background-color: $bg-blue;
   padding-bottom: 100px;
 
+  @media screen and (min-width: 950px) {
+    padding-top: 80px;
+  }
+
   div#container-hero-section {
     width: 90%;
     display: flex;
@@ -175,6 +197,13 @@ section#hero-section {
     div#item-left-hero {
       @media screen and (min-width: 950px) {
         width: 50%;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: url(../img/picto/Ornament-top.svg);
+          top: -40px;
+        }
       }
 
       span {
@@ -186,6 +215,7 @@ section#hero-section {
         text-transform: uppercase;
         margin-top: 28px;
         margin-bottom: 8px;
+        margin: 28px 30px 8px 0;
         color: $creamColor;
       }
 
@@ -210,6 +240,10 @@ section#hero-section {
         color: $a-color;
         border-radius: 100px;
 
+        @media screen and (min-width: 950px) {
+          width: 50%;
+        }
+
         img {
           margin-right: 8px;
         }
@@ -220,12 +254,17 @@ section#hero-section {
       position: relative;
       text-align: center;
 
+      @media screen and (min-width: 950px) {
+        width: 50%;
+      }
+
       &::before {
         position: absolute;
         content: url(../img/picto/star.svg);
 
         @media screen and (min-width: 950px) {
           display: none;
+          width: 50%;
         }
       }
 
@@ -241,11 +280,76 @@ section#hero-section {
             position: absolute;
             content: url(../img/picto/star.svg);
           }
+
+          &::before {
+            position: absolute;
+            content: url(../img/picto/star.svg);
+          }
         }
 
         @media screen and (min-width: 950px) {
           width: 50%;
         }
+      }
+
+      img {
+        width: 280px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// ------------ Last-recipe section ------------
+
+section#last-recipe-section {
+  background-color: $bg-orange;
+  padding-bottom: 100px;
+  padding-top: 40px;
+
+  @media screen and (min-width: 950px) {
+    padding-top: 80px;
+  }
+
+  div#container-card-last-recipe {
+    width: 220px;
+    margin-top: 60px;
+    text-align: center;
+
+    div#card-last-recipe {
+      position: relative;
+      margin-bottom: 100px;
+
+      h2#title-last-recipe-section {
+        text-decoration: underline;
+        margin-bottom: 40px;
+      }
+
+      h3#title-description-card {
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+
+      figcaption {
+        height: 100px;
+        background-color: $bg-blue;
+        background-position: 50%;
+        border-radius: 25px;
+
+        img {
+          position: absolute;
+          width: 80%;
+          height: auto;
+          top: -60px;
+          left: 16px;
+        }
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 150%;
+        color: $title-color;
       }
     }
   }
