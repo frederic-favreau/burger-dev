@@ -1,8 +1,7 @@
 $creamColor: #ffe5a2;
 $bg-blue: #243763;
-$bg-orange: #FF6E31;
-$a-color: #FFE5A5;
-
+$bg-orange: #ff6e31;
+$a-color: #ffe5a5;
 
 *,
 ::after,
@@ -46,10 +45,10 @@ h1 {
 // ------------ header section ------------
 
 header {
-    // background-blend-mode:overlay ;
-    mix-blend-mode: overlay;
-    opacity: 1;
-    background-image: url(../img/burger-mobile.png);
+  // background-blend-mode:overlay ;
+  mix-blend-mode: overlay;
+  opacity: 1;
+  background-image: url(../img/burger-mobile.png);
 
   nav {
     border-bottom: 0.5px solid $creamColor;
@@ -168,7 +167,17 @@ section#hero-section {
     display: flex;
     flex-direction: column;
 
+    @media screen and (min-width: 950px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+
+    }
+
     div#item-left-hero {
+      @media screen and (min-width: 950px) {
+        width: 50%;
+      }
+
       span {
         display: block;
         font-weight: bold;
@@ -205,6 +214,14 @@ section#hero-section {
         img {
           margin-right: 8px;
         }
+      }
+    }
+
+    figcaption#item-right-hero {
+      text-align: center;
+
+      @media screen and (min-width: 950px) {
+        width: 50%;
       }
     }
   }
