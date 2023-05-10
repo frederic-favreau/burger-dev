@@ -160,7 +160,7 @@ header {
 // ------------ hero section ------------
 section#hero-section {
   background-color: $bg-blue;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 
   div#container-hero-section {
     width: 90%;
@@ -170,7 +170,6 @@ section#hero-section {
     @media screen and (min-width: 950px) {
       flex-wrap: wrap;
       flex-direction: row;
-
     }
 
     div#item-left-hero {
@@ -218,10 +217,35 @@ section#hero-section {
     }
 
     figcaption#item-right-hero {
+      position: relative;
       text-align: center;
 
-      @media screen and (min-width: 950px) {
-        width: 50%;
+      &::before {
+        position: absolute;
+        content: url(../img/picto/star.svg);
+
+        @media screen and (min-width: 950px) {
+          display: none;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: url(../img/picto/Ornament-bottom.svg);
+        bottom: -70px;
+        right: 10%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (min-width: 950px) {
+          &::after {
+            position: absolute;
+            content: url(../img/picto/star.svg);
+          }
+        }
+
+        @media screen and (min-width: 950px) {
+          width: 50%;
+        }
       }
     }
   }

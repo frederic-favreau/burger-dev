@@ -137,7 +137,7 @@ header nav div#container-nav-top div#menu-picto ul li a div#container-menu-buger
 
 section#hero-section {
   background-color: #243763;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 section#hero-section div#container-hero-section {
   width: 90%;
@@ -190,10 +190,33 @@ section#hero-section div#container-hero-section div#item-left-hero a#btn-show-re
   margin-right: 8px;
 }
 section#hero-section div#container-hero-section figcaption#item-right-hero {
+  position: relative;
   text-align: center;
 }
+section#hero-section div#container-hero-section figcaption#item-right-hero::before {
+  position: absolute;
+  content: url(../img/picto/star.svg);
+}
 @media screen and (min-width: 950px) {
-  section#hero-section div#container-hero-section figcaption#item-right-hero {
+  section#hero-section div#container-hero-section figcaption#item-right-hero::before {
+    display: none;
+  }
+}
+section#hero-section div#container-hero-section figcaption#item-right-hero::after {
+  position: absolute;
+  content: url(../img/picto/Ornament-bottom.svg);
+  bottom: -70px;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 950px) {
+  section#hero-section div#container-hero-section figcaption#item-right-hero::after::after {
+    position: absolute;
+    content: url(../img/picto/star.svg);
+  }
+}
+@media screen and (min-width: 950px) {
+  section#hero-section div#container-hero-section figcaption#item-right-hero::after {
     width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
