@@ -60,6 +60,15 @@ h3 {
   color: #ffebb7;
 }
 
+h4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffebb7;
+}
+
 header {
   mix-blend-mode: overlay;
   opacity: 1;
@@ -277,7 +286,7 @@ section#hero-section div#container-hero-section figcaption#item-right-hero img {
 
 section#last-recipe-section {
   background-color: #e8652e;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   padding-top: 40px;
 }
 @media screen and (min-width: 950px) {
@@ -337,4 +346,22 @@ section#last-recipe-section div#container-card-last-recipe div#card-last-recipe 
   font-size: 12px;
   line-height: 150%;
   color: #ffebb7;
+}
+
+section#share-recipe-section {
+  background-color: #e8652e;
+  padding-top: 80px;
+}
+section#share-recipe-section div#container-card-share-recipe figcaption {
+  position: relative;
+  width: 280px;
+  height: 355px;
+  background-image: url(../img/picto/Image-pict-food.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+section#share-recipe-section div#container-card-share-recipe figcaption img {
+  position: absolute;
+  left: 25%;
+  bottom: -40px;
 }/*# sourceMappingURL=style.css.map */
