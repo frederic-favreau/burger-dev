@@ -1,8 +1,6 @@
 {% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %}
-
-{%block stylesheet %}<link href="{{ style }}CSS/style.css" rel="stylesheet">{% endblock %}
-
-{% block content %}
+{%block stylesheet %}<link href="{{ style }}CSS/style.css" rel="stylesheet" />{%
+endblock %} {% block content %}
 
 <main>
   {# ---------- Hero section ---------- #}
@@ -143,10 +141,20 @@
         </div>
       </div>
     </div>
-    <a href="#" id="btn-show-recipe"
-      >Proposer <br />
-      une recette</a
-    >
+    <a href="#" id="btn-show-recipe">Proposer une recette</a>
+  </section>
+
+  {# ---------- category section ---------- #}
+
+  <section id="category-section">
+    <div id="container-category-section" class="row-limit-size">
+      <figcaption><p>Lorem ipsum</p></figcaption>
+      <figcaption><p>Lorem ipsum</p></figcaption>
+      <figcaption><p>Lorem ipsum</p></figcaption>
+      <figcaption><p>Lorem ipsum</p></figcaption>
+      <figcaption><p>Lorem ipsum</p></figcaption>
+      <figcaption><p>Lorem ipsum</p></figcaption>
+    </div>
   </section>
 </main>
 {% endblock %}

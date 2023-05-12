@@ -199,7 +199,7 @@ section#hero-section div#container-hero-section {
   }
   section#hero-section div#container-hero-section div#item-left-hero::before {
     position: absolute;
-    content: url(../img/picto/Ornament-top.svg);
+    content: url(../../img/picto/Ornament-top.svg);
     top: -40px;
   }
 }
@@ -254,7 +254,7 @@ section#hero-section div#container-hero-section figcaption#item-right-hero {
 }
 section#hero-section div#container-hero-section figcaption#item-right-hero::before {
   position: absolute;
-  content: url(../img/picto/star.svg);
+  content: url(../../img/picto/star.svg);
 }
 @media screen and (min-width: 950px) {
   section#hero-section div#container-hero-section figcaption#item-right-hero::before {
@@ -264,7 +264,7 @@ section#hero-section div#container-hero-section figcaption#item-right-hero::befo
 }
 section#hero-section div#container-hero-section figcaption#item-right-hero::after {
   position: absolute;
-  content: url(../img/picto/Ornament-bottom.svg);
+  content: url(../../img/picto/Ornament-bottom.svg);
   bottom: -70px;
   right: 10%;
   transform: translate(-50%, -50%);
@@ -272,11 +272,11 @@ section#hero-section div#container-hero-section figcaption#item-right-hero::afte
 @media screen and (min-width: 950px) {
   section#hero-section div#container-hero-section figcaption#item-right-hero::after::after {
     position: absolute;
-    content: url(../img/picto/star.svg);
+    content: url(../../img/picto/star.svg);
   }
   section#hero-section div#container-hero-section figcaption#item-right-hero::after::before {
     position: absolute;
-    content: url(../img/picto/star.svg);
+    content: url(../../img/picto/star.svg);
   }
 }
 @media screen and (min-width: 950px) {
@@ -393,10 +393,11 @@ section#share-recipe-section div#container-card-share-recipe figcaption img {
     width: 180px;
     height: auto;
     left: 18%;
-    bottom: 40px;
+    bottom: 70px;
   }
 }
 section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption p {
+  width: 90%;
   max-width: 500px;
   font-family: "PT Serif";
   font-style: normal;
@@ -445,7 +446,7 @@ section#share-recipe-section a#btn-show-recipe {
   display: flex;
   margin: 25px auto 40px;
   width: 90%;
-  max-width: 250px;
+  max-width: 350px;
   height: 51px;
   justify-content: center;
   align-items: center;
@@ -455,4 +456,30 @@ section#share-recipe-section a#btn-show-recipe {
   background: #ffe5a5;
   color: #243763;
   border-radius: 100px;
+}
+
+section#category-section {
+  background-color: #ffebb7;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+section#category-section div#container-category-section figcaption {
+  display: flex;
+  width: 280px;
+  height: 280px;
+  margin: 30px auto;
+  background-image: url(../../img/img-test.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+section#category-section div#container-category-section figcaption p {
+  margin: auto;
+  font-family: "Ultra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffebb7;
 }/*# sourceMappingURL=style.css.map */

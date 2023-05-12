@@ -220,7 +220,7 @@ section#hero-section {
 
         &::before {
           position: absolute;
-          content: url(../img/picto/Ornament-top.svg);
+          content: url(../../img/picto/Ornament-top.svg);
           top: -40px;
         }
       }
@@ -279,7 +279,7 @@ section#hero-section {
 
       &::before {
         position: absolute;
-        content: url(../img/picto/star.svg);
+        content: url(../../img/picto/star.svg);
 
         @media screen and (min-width: 950px) {
           display: none;
@@ -289,7 +289,7 @@ section#hero-section {
 
       &::after {
         position: absolute;
-        content: url(../img/picto/Ornament-bottom.svg);
+        content: url(../../img/picto/Ornament-bottom.svg);
         bottom: -70px;
         right: 10%;
         transform: translate(-50%, -50%);
@@ -297,12 +297,12 @@ section#hero-section {
         @media screen and (min-width: 950px) {
           &::after {
             position: absolute;
-            content: url(../img/picto/star.svg);
+            content: url(../../img/picto/star.svg);
           }
 
           &::before {
             position: absolute;
-            content: url(../img/picto/star.svg);
+            content: url(../../img/picto/star.svg);
           }
         }
 
@@ -428,13 +428,14 @@ section#share-recipe-section {
           width: 180px;
           height: auto;
           left: 18%;
-          bottom: 40px;
+          bottom: 70px;
         }
       }
     }
 
     div#share-recipe-descrption {
       p {
+        width: 90%;
         max-width: 500px;
         font-family: "PT Serif";
         font-style: normal;
@@ -485,11 +486,12 @@ section#share-recipe-section {
       }
     }
   }
+
   a#btn-show-recipe {
     display: flex;
     margin: 25px auto 40px;
     width: 90%;
-    max-width: 250px;
+    max-width: 350px;
     height: 51px;
     justify-content: center;
     align-items: center;
@@ -499,5 +501,38 @@ section#share-recipe-section {
     background: $a-color;
     color: $bg-blue;
     border-radius: 100px;
+  }
+}
+
+// ------------ category section ------------
+
+section#category-section {
+  background-color: $title-color;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  div#container-category-section {
+
+    figcaption {
+      display: flex;
+      width: 280px;
+      height: 280px;
+      margin: 30px auto;
+      background-image: url(../../img/img-test.jpg);
+      background-size: cover;
+      border-radius: 10px;
+
+      p {
+        margin: auto;
+        font-family: "Ultra", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $title-color;
+      }
+    }
   }
 }
