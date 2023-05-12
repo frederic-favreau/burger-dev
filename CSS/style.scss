@@ -319,7 +319,6 @@ section#hero-section {
 
 section#last-recipe-section {
   background-color: $bg-orange;
-  padding-bottom: 60px;
   padding-top: 40px;
 
   @media screen and (min-width: 950px) {
@@ -390,6 +389,7 @@ section#last-recipe-section {
 section#share-recipe-section {
   background-color: $bg-orange;
   padding-top: 80px;
+  padding-bottom: 30px;
 
   div#container-card-share-recipe {
     figcaption {
@@ -398,13 +398,77 @@ section#share-recipe-section {
       height: 355px;
       background-image: url(../img/picto/Image-pict-food.jpg);
       background-repeat: no-repeat;
-      margin: 0 auto;
+      margin: 0 auto 30px;
 
       img {
         position: absolute;
         left: 25%;
-        bottom: -40px;
+        bottom: 0px;
+        border-radius: 10px;
       }
+    }
+
+    div#share-recipe-descrption {
+      p {
+        font-family: "PT Serif";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 155%;
+        text-align: center;
+        color: $title-color;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      div#counter-recipe {
+        display: flex;
+        justify-content: space-evenly;
+        width: 280px;
+        margin: 0 auto;
+        background-color: $title-color;
+        color: $bg-blue;
+        border-radius: 50px;
+        padding: 20px 0;
+
+        div.counter-recipe-comon {
+          display: flex;
+          flex-direction: column;
+          border-right: 1px solid $bg-blue;
+
+          span {
+            margin-right: 25px;
+          }
+
+          span.count {
+            font-family: "Ultra", sans-serif;
+            font-size: 24px;
+            line-height: 31px;
+            text-transform: uppercase;
+          }
+
+          span.type {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 155%;
+          }
+        }
+      }
+    }
+
+    a#btn-show-recipe {
+      display: flex;
+      margin: 25px auto 40px;
+      width: 250px;
+      height: 51px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 12px 24px 12px 12px;
+      background: $a-color;
+      color: $bg-blue;
+      border-radius: 100px;
     }
   }
 }

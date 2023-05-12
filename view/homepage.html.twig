@@ -1,6 +1,8 @@
-{% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %} {%
-block style %}<link href="./CSS/style.css" rel="stylesheet" />
-{% endblock %} {% block content %}
+{% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %} 
+
+{%block style %}<link href="./CSS/style.css" rel="stylesheet" />{% endblock %}
+
+{% block content %}
 <main>
   {# ---------- Hero section ---------- #}
 
@@ -111,7 +113,11 @@ block style %}<link href="./CSS/style.css" rel="stylesheet" />
         <img src="./img/picto/burger-img.png" alt="Restaurant" />
       </figcaption>
       <div id="share-recipe-descrption">
-        <h4>Créer vos <br> propres <br> burgers</h4>
+        <h4>
+          Créer vos <br />
+          propres <br />
+          burgers
+        </h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos sunt,
           atque corrupti consequatur ut velit, nemo natus vero odio rerum rem!
@@ -121,21 +127,21 @@ block style %}<link href="./CSS/style.css" rel="stylesheet" />
           natus?
         </p>
         <div id="counter-recipe">
-          <div id="item-left-counter">
-            <span>220+</span>
-            <span>Recettes</span>
-          </div>
-          <div id="item-middle-counter">
-            <span>45+</span>
-            <span>Années</span>
-          </div>
-          <div id="item-right-counter">
-            <span>20</span>
-            <span>Menus</span>
+          <div id="item-left-counter" class="counter-recipe-comon">
+            <span class="count">220+</span>
+            <span class="type">Recettes</span> 
+           </div>
+          <div id="item-middle-counter" class="counter-recipe-comon">
+            <span class="count">45+</span>
+            <span class="type">Années</span>
+           </div>
+          <div id="item-right-counter" class="counter-recipe-comon">
+            <span class="count">20</span>
+            <span class="type">Menus</span>
           </div>
         </div>
       </div>
-      <a href="#" id="btn-show-recipe">voir les recettes</a>
+      <a href="#" id="btn-show-recipe">Proposer <br> une recettes</a>
     </div>
   </section>
 </main>

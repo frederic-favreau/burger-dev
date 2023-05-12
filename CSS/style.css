@@ -286,7 +286,6 @@ section#hero-section div#container-hero-section figcaption#item-right-hero img {
 
 section#last-recipe-section {
   background-color: #e8652e;
-  padding-bottom: 60px;
   padding-top: 40px;
 }
 @media screen and (min-width: 950px) {
@@ -351,6 +350,7 @@ section#last-recipe-section div#container-card-last-recipe div#card-last-recipe 
 section#share-recipe-section {
   background-color: #e8652e;
   padding-top: 80px;
+  padding-bottom: 30px;
 }
 section#share-recipe-section div#container-card-share-recipe figcaption {
   position: relative;
@@ -358,10 +358,65 @@ section#share-recipe-section div#container-card-share-recipe figcaption {
   height: 355px;
   background-image: url(../img/picto/Image-pict-food.jpg);
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 section#share-recipe-section div#container-card-share-recipe figcaption img {
   position: absolute;
   left: 25%;
-  bottom: -40px;
+  bottom: 0px;
+  border-radius: 10px;
+}
+section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption p {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  color: #ffebb7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe {
+  display: flex;
+  justify-content: space-evenly;
+  width: 280px;
+  margin: 0 auto;
+  background-color: #ffebb7;
+  color: #243763;
+  border-radius: 50px;
+  padding: 20px 0;
+}
+section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe div.counter-recipe-comon {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #243763;
+}
+section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe div.counter-recipe-comon span {
+  margin-right: 25px;
+}
+section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe div.counter-recipe-comon span.count {
+  font-family: "Ultra", sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe div.counter-recipe-comon span.type {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 155%;
+}
+section#share-recipe-section div#container-card-share-recipe a#btn-show-recipe {
+  display: flex;
+  margin: 25px auto 40px;
+  width: 250px;
+  height: 51px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 24px 12px 12px;
+  background: #ffe5a5;
+  color: #243763;
+  border-radius: 100px;
 }/*# sourceMappingURL=style.css.map */
