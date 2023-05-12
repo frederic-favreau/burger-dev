@@ -46,7 +46,6 @@ h2 {
 }
 @media screen and (min-width: 950px) {
   h2 {
-    font-weight: 400;
     font-size: 44px;
     line-height: 100%;
   }
@@ -67,6 +66,12 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   color: #ffebb7;
+}
+@media screen and (min-width: 950px) {
+  h4 {
+    font-size: 72px;
+    line-height: 80px;
+  }
 }
 
 header {
@@ -352,13 +357,30 @@ section#share-recipe-section {
   padding-top: 80px;
   padding-bottom: 30px;
 }
+section#share-recipe-section div#container-card-share-recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 750px) {
+  section#share-recipe-section div#container-card-share-recipe {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 section#share-recipe-section div#container-card-share-recipe figcaption {
   position: relative;
   width: 280px;
   height: 355px;
-  background-image: url(../img/picto/Image-pict-food.jpg);
+  background-image: url(../../img/picto/Image-pict-food.jpg);
   background-repeat: no-repeat;
   margin: 0 auto 30px;
+}
+@media screen and (min-width: 950px) {
+  section#share-recipe-section div#container-card-share-recipe figcaption {
+    width: 400px;
+    height: auto;
+  }
 }
 section#share-recipe-section div#container-card-share-recipe figcaption img {
   position: absolute;
@@ -366,7 +388,16 @@ section#share-recipe-section div#container-card-share-recipe figcaption img {
   bottom: 0px;
   border-radius: 10px;
 }
+@media screen and (min-width: 950px) {
+  section#share-recipe-section div#container-card-share-recipe figcaption img {
+    width: 180px;
+    height: auto;
+    left: 18%;
+    bottom: 40px;
+  }
+}
 section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption p {
+  max-width: 500px;
   font-family: "PT Serif";
   font-style: normal;
   font-weight: 700;
@@ -374,8 +405,12 @@ section#share-recipe-section div#container-card-share-recipe div#share-recipe-de
   line-height: 155%;
   text-align: center;
   color: #ffebb7;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
+}
+@media screen and (min-width: 950px) {
+  section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption p {
+    font-size: 16px;
+  }
 }
 section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe {
   display: flex;
@@ -406,10 +441,11 @@ section#share-recipe-section div#container-card-share-recipe div#share-recipe-de
   font-size: 12px;
   line-height: 155%;
 }
-section#share-recipe-section div#container-card-share-recipe a#btn-show-recipe {
+section#share-recipe-section a#btn-show-recipe {
   display: flex;
   margin: 25px auto 40px;
-  width: 250px;
+  width: 90%;
+  max-width: 250px;
   height: 51px;
   justify-content: center;
   align-items: center;

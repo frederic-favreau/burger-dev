@@ -1,8 +1,9 @@
-{% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %} 
+{% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %}
 
-{%block style %}<link href="./CSS/style.css" rel="stylesheet" />{% endblock %}
+{%block stylesheet %}<link href="{{ style }}CSS/style.css" rel="stylesheet">{% endblock %}
 
 {% block content %}
+
 <main>
   {# ---------- Hero section ---------- #}
 
@@ -129,20 +130,23 @@
         <div id="counter-recipe">
           <div id="item-left-counter" class="counter-recipe-comon">
             <span class="count">220+</span>
-            <span class="type">Recettes</span> 
-           </div>
+            <span class="type">Recettes</span>
+          </div>
           <div id="item-middle-counter" class="counter-recipe-comon">
             <span class="count">45+</span>
             <span class="type">Années</span>
-           </div>
+          </div>
           <div id="item-right-counter" class="counter-recipe-comon">
             <span class="count">20</span>
             <span class="type">Menus</span>
           </div>
         </div>
       </div>
-      <a href="#" id="btn-show-recipe">Proposer <br> une recettes</a>
     </div>
+    <a href="#" id="btn-show-recipe"
+      >Proposer <br />
+      une recette</a
+    >
   </section>
 </main>
 {% endblock %}

@@ -52,7 +52,6 @@ h2 {
   color: $title-color;
 
   @media screen and (min-width: 950px) {
-    font-weight: 400;
     font-size: 44px;
     line-height: 100%;
   }
@@ -73,6 +72,11 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   color: $title-color;
+
+  @media screen and (min-width: 950px) {
+    font-size: 72px;
+    line-height: 80px;
+  }
 }
 
 // ------------ header section ------------
@@ -392,24 +396,46 @@ section#share-recipe-section {
   padding-bottom: 30px;
 
   div#container-card-share-recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 750px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     figcaption {
       position: relative;
       width: 280px;
       height: 355px;
-      background-image: url(../img/picto/Image-pict-food.jpg);
+      background-image: url(../../img/picto/Image-pict-food.jpg);
       background-repeat: no-repeat;
       margin: 0 auto 30px;
+
+      @media screen and (min-width: 950px) {
+        width: 400px;
+        height: auto;
+      }
 
       img {
         position: absolute;
         left: 25%;
         bottom: 0px;
         border-radius: 10px;
+
+        @media screen and (min-width: 950px) {
+          width: 180px;
+          height: auto;
+          left: 18%;
+          bottom: 40px;
+        }
       }
     }
 
     div#share-recipe-descrption {
       p {
+        max-width: 500px;
         font-family: "PT Serif";
         font-style: normal;
         font-weight: 700;
@@ -417,8 +443,11 @@ section#share-recipe-section {
         line-height: 155%;
         text-align: center;
         color: $title-color;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px auto;
+
+        @media screen and (min-width: 950px) {
+          font-size: 16px;
+        }
       }
 
       div#counter-recipe {
@@ -455,20 +484,20 @@ section#share-recipe-section {
         }
       }
     }
-
-    a#btn-show-recipe {
-      display: flex;
-      margin: 25px auto 40px;
-      width: 250px;
-      height: 51px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      text-transform: uppercase;
-      padding: 12px 24px 12px 12px;
-      background: $a-color;
-      color: $bg-blue;
-      border-radius: 100px;
-    }
+  }
+  a#btn-show-recipe {
+    display: flex;
+    margin: 25px auto 40px;
+    width: 90%;
+    max-width: 250px;
+    height: 51px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 24px 12px 12px;
+    background: $a-color;
+    color: $bg-blue;
+    border-radius: 100px;
   }
 }
