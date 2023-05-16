@@ -4,6 +4,9 @@ $bg-orange: #ff6e31;
 $a-color: #ffe5a5;
 $bg-orange: #e8652e;
 $title-color: #ffebb7;
+$bg-creame: #ffe7ab;
+$text-color: #ffe39a;
+$white: #fff;
 
 *,
 ::after,
@@ -211,7 +214,8 @@ section#hero-section {
   padding-bottom: 100px;
 
   @media screen and (min-width: 950px) {
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 
   div#container-hero-section {
@@ -346,7 +350,7 @@ section#last-recipe-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 130px;
     text-align: center;
 
     @media screen and (min-width: 750px) {
@@ -360,11 +364,6 @@ section#last-recipe-section {
       margin: 0 20px 120px 20px;
       display: flex;
       flex-direction: column;
-
-      h2#title-last-recipe-section {
-        text-decoration: underline;
-        margin-bottom: 40px;
-      }
 
       h3#title-description-card {
         margin-top: 15px;
@@ -404,7 +403,6 @@ section#last-recipe-section {
 
 section#share-recipe-section {
   background-color: $bg-orange;
-  padding-top: 80px;
   padding-bottom: 30px;
 
   div#container-card-share-recipe {
@@ -514,6 +512,11 @@ section#share-recipe-section {
     background: $a-color;
     color: $bg-blue;
     border-radius: 100px;
+
+    @media screen and (min-width: 950px) {
+      margin: 95px auto 70px;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -570,7 +573,134 @@ section#category-section {
 // ------------ top-menu section ------------
 
 section#top-menu-section {
-  background-color: $title-color;
+  background-color: $bg-creame;
   padding-top: 40px;
   padding-bottom: 30px;
+
+  h5.title-section-top-menu {
+    padding: 5%;
+  }
+
+  div#container-card-top-menu-section {
+    margin-top: 90px;
+
+    div.card-slide-top-menu {
+      width: 280px;
+      height: fit-content;
+      margin: 0 auto;
+
+      figcaption {
+        position: relative;
+        height: 90px;
+        background-color: $bg-orange;
+        border-radius: 12px 12px 0 0;
+
+        img {
+          position: absolute;
+          left: 50%;
+          top: 20%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      div.description-card-slide {
+        border-radius: 0 0 12px 12px;
+        padding: 40px 20px;
+        background-color: $bg-blue;
+
+        span.title-card-slide {
+          display: block;
+          font-family: "Ultra";
+          font-size: 20px;
+          line-height: 150%;
+          text-align: center;
+          text-transform: uppercase;
+          color: #ffe39a;
+        }
+
+        p {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 150%;
+          text-align: center;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          color: $text-color;
+        }
+
+        a {
+          display: flex;
+          margin: 35px auto 20px;
+          width: 220px;
+          height: 51px;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          padding: 12px 24px 12px 12px;
+          background: $bg-orange;
+          color: $a-color;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}
+
+// ------------ top-menu section ------------
+
+footer {
+  background-color: $bg-orange;
+  padding-top: 40px;
+  height: 800px;
+
+  hr#hr-top {
+    margin-bottom: 40px;
+  }
+
+  p#title-newletter {
+    font-family: "Ultra";
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    text-transform: capitalize;
+    color: $title-color;
+    margin-bottom: 30px;
+  }
+
+  form {
+    position: absolute;
+  }
+
+  input#input-newletter {
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 68px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  input#btn-subscribe {
+    bottom: 150px;
+    left: 250px;
+    padding: 10px 20px;
+    background-color: $bg-blue;
+    color: $white;
+    border-radius: 20px;
+    border: none;
+  }
+
+  hr#hr-bottom {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: $white;
+  }
 }

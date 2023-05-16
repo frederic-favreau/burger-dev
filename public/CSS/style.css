@@ -189,7 +189,8 @@ section#hero-section {
 }
 @media screen and (min-width: 950px) {
   section#hero-section {
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 }
 section#hero-section div#container-hero-section {
@@ -315,7 +316,7 @@ section#last-recipe-section div#container-card-last-recipe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 130px;
   text-align: center;
 }
 @media screen and (min-width: 750px) {
@@ -330,10 +331,6 @@ section#last-recipe-section div#container-card-last-recipe div#card-last-recipe 
   margin: 0 20px 120px 20px;
   display: flex;
   flex-direction: column;
-}
-section#last-recipe-section div#container-card-last-recipe div#card-last-recipe h2#title-last-recipe-section {
-  text-decoration: underline;
-  margin-bottom: 40px;
 }
 section#last-recipe-section div#container-card-last-recipe div#card-last-recipe h3#title-description-card {
   margin-top: 15px;
@@ -366,7 +363,6 @@ section#last-recipe-section div#container-card-last-recipe div#card-last-recipe 
 
 section#share-recipe-section {
   background-color: #e8652e;
-  padding-top: 80px;
   padding-bottom: 30px;
 }
 section#share-recipe-section div#container-card-share-recipe {
@@ -470,6 +466,12 @@ section#share-recipe-section a#btn-show-recipe {
   color: #243763;
   border-radius: 100px;
 }
+@media screen and (min-width: 950px) {
+  section#share-recipe-section a#btn-show-recipe {
+    margin: 95px auto 70px;
+    justify-content: space-around;
+  }
+}
 
 section#category-section {
   background-color: #ffebb7;
@@ -518,7 +520,120 @@ section#category-section div#container-category-section figcaption p {
 }
 
 section#top-menu-section {
-  background-color: #ffebb7;
+  background-color: #ffe7ab;
   padding-top: 40px;
   padding-bottom: 30px;
+}
+section#top-menu-section h5.title-section-top-menu {
+  padding: 5%;
+}
+section#top-menu-section div#container-card-top-menu-section {
+  margin-top: 90px;
+}
+section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu {
+  width: 280px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu figcaption {
+  position: relative;
+  height: 90px;
+  background-color: #e8652e;
+  border-radius: 12px 12px 0 0;
+}
+section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu figcaption img {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu div.description-card-slide {
+  border-radius: 0 0 12px 12px;
+  padding: 40px 20px;
+  background-color: #243763;
+}
+section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu div.description-card-slide span.title-card-slide {
+  display: block;
+  font-family: "Ultra";
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffe39a;
+}
+section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu div.description-card-slide p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #ffe39a;
+}
+section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu div.description-card-slide a {
+  display: flex;
+  margin: 35px auto 20px;
+  width: 220px;
+  height: 51px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 12px 24px 12px 12px;
+  background: #e8652e;
+  color: #ffe5a5;
+  border-radius: 100px;
+}
+
+footer {
+  background-color: #e8652e;
+  padding-top: 40px;
+  height: 800px;
+}
+footer hr#hr-top {
+  margin-bottom: 40px;
+}
+footer p#title-newletter {
+  font-family: "Ultra";
+  font-size: 40px;
+  line-height: 125%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffebb7;
+  margin-bottom: 30px;
+}
+footer form {
+  position: absolute;
+}
+footer input#input-newletter {
+  position: relative;
+  display: block;
+  width: 280px;
+  height: 68px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+footer input#input-newletter::-moz-placeholder {
+  color: #fff;
+}
+footer input#input-newletter::placeholder {
+  color: #fff;
+}
+footer input#btn-subscribe {
+  bottom: 150px;
+  left: 250px;
+  padding: 10px 20px;
+  background-color: #243763;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+}
+footer hr#hr-bottom {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
