@@ -60,6 +60,7 @@ h3 {
 }
 
 h4 {
+  font-family: "Ultra", sans-serif;
   font-size: 36px;
   font-weight: bold;
   line-height: 44px;
@@ -72,6 +73,16 @@ h4 {
     font-size: 72px;
     line-height: 80px;
   }
+}
+
+h5 {
+  font-family: "Ultra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 header {
@@ -224,7 +235,7 @@ section#hero-section div#container-hero-section div#item-left-hero p {
 }
 section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe {
   display: flex;
-  margin: 25px auto 40px;
+  margin: 35px auto 40px;
   width: 250px;
   height: 51px;
   justify-content: center;
@@ -238,6 +249,7 @@ section#hero-section div#container-hero-section div#item-left-hero a#btn-show-re
 @media screen and (min-width: 950px) {
   section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe {
     width: 50%;
+    margin: 45px auto 40px;
   }
 }
 section#hero-section div#container-hero-section div#item-left-hero a#btn-show-recipe img {
@@ -265,7 +277,7 @@ section#hero-section div#container-hero-section figcaption#item-right-hero::befo
 section#hero-section div#container-hero-section figcaption#item-right-hero::after {
   position: absolute;
   content: url(../../img/picto/Ornament-bottom.svg);
-  bottom: -70px;
+  bottom: -100px;
   right: 10%;
   transform: translate(-50%, -50%);
 }
@@ -375,6 +387,7 @@ section#share-recipe-section div#container-card-share-recipe figcaption {
   background-image: url(../../img/picto/Image-pict-food.jpg);
   background-repeat: no-repeat;
   margin: 0 auto 30px;
+  border-radius: 32px;
 }
 @media screen and (min-width: 950px) {
   section#share-recipe-section div#container-card-share-recipe figcaption {
@@ -386,7 +399,7 @@ section#share-recipe-section div#container-card-share-recipe figcaption img {
   position: absolute;
   left: 25%;
   bottom: 0px;
-  border-radius: 10px;
+  border-radius: 32px;
 }
 @media screen and (min-width: 950px) {
   section#share-recipe-section div#container-card-share-recipe figcaption img {
@@ -415,21 +428,21 @@ section#share-recipe-section div#container-card-share-recipe div#share-recipe-de
 }
 section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 280px;
   margin: 0 auto;
   background-color: #ffebb7;
   color: #243763;
   border-radius: 50px;
-  padding: 20px 0;
+  padding: 20px 60px;
 }
 section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe div.counter-recipe-comon {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #243763;
 }
 section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe div.counter-recipe-comon span {
-  margin-right: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 section#share-recipe-section div#container-card-share-recipe div#share-recipe-descrption div#counter-recipe div.counter-recipe-comon span.count {
   font-family: "Ultra", sans-serif;
@@ -463,23 +476,49 @@ section#category-section {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+section#category-section div#container-category-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 section#category-section div#container-category-section figcaption {
   display: flex;
   width: 280px;
   height: 280px;
-  margin: 30px auto;
+  margin: 15px;
   background-image: url(../../img/img-test.jpg);
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 32px;
+}
+@media screen and (min-width: 650px) {
+  section#category-section div#container-category-section figcaption {
+    width: 347px;
+    height: 275px;
+  }
+}
+section#category-section div#container-category-section figcaption:last-of-type {
+  width: 280px;
+  height: 280px;
+}
+@media screen and (min-width: 650px) {
+  section#category-section div#container-category-section figcaption:last-of-type {
+    width: 736px;
+    height: 275px;
+  }
 }
 section#category-section div#container-category-section figcaption p {
   margin: auto;
   font-family: "Ultra", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 32px;
+  font-weight: bold;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: #ffebb7;
+}
+
+section#top-menu-section {
+  background-color: #ffebb7;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

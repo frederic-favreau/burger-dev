@@ -66,6 +66,7 @@ h3 {
 }
 
 h4 {
+  font-family: "Ultra", sans-serif;
   font-size: 36px;
   font-weight: bold;
   line-height: 44px;
@@ -77,6 +78,16 @@ h4 {
     font-size: 72px;
     line-height: 80px;
   }
+}
+
+h5 {
+  font-family: "Ultra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 // ------------ header section ------------
@@ -248,7 +259,7 @@ section#hero-section {
 
       a#btn-show-recipe {
         display: flex;
-        margin: 25px auto 40px;
+        margin: 35px auto 40px;
         width: 250px;
         height: 51px;
         justify-content: center;
@@ -261,6 +272,7 @@ section#hero-section {
 
         @media screen and (min-width: 950px) {
           width: 50%;
+          margin: 45px auto 40px;
         }
 
         img {
@@ -290,7 +302,7 @@ section#hero-section {
       &::after {
         position: absolute;
         content: url(../../img/picto/Ornament-bottom.svg);
-        bottom: -70px;
+        bottom: -100px;
         right: 10%;
         transform: translate(-50%, -50%);
 
@@ -412,6 +424,7 @@ section#share-recipe-section {
       background-image: url(../../img/picto/Image-pict-food.jpg);
       background-repeat: no-repeat;
       margin: 0 auto 30px;
+      border-radius: 32px;
 
       @media screen and (min-width: 950px) {
         width: 400px;
@@ -422,7 +435,7 @@ section#share-recipe-section {
         position: absolute;
         left: 25%;
         bottom: 0px;
-        border-radius: 10px;
+        border-radius: 32px;
 
         @media screen and (min-width: 950px) {
           width: 180px;
@@ -453,21 +466,21 @@ section#share-recipe-section {
 
       div#counter-recipe {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 280px;
         margin: 0 auto;
         background-color: $title-color;
         color: $bg-blue;
         border-radius: 50px;
-        padding: 20px 0;
+        padding: 20px 60px;
 
         div.counter-recipe-comon {
           display: flex;
           flex-direction: column;
-          border-right: 1px solid $bg-blue;
 
           span {
-            margin-right: 25px;
+            margin-left: 15px;
+            margin-right: 15px;
           }
 
           span.count {
@@ -512,22 +525,39 @@ section#category-section {
   padding-bottom: 30px;
 
   div#container-category-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     figcaption {
       display: flex;
       width: 280px;
       height: 280px;
-      margin: 30px auto;
+      margin: 15px;
       background-image: url(../../img/img-test.jpg);
       background-size: cover;
-      border-radius: 10px;
+      border-radius: 32px;
+
+      @media screen and (min-width: 650px) {
+        width: 347px;
+        height: 275px;
+      }
+
+      &:last-of-type {
+        width: 280px;
+        height: 280px;
+
+        @media screen and (min-width: 650px) {
+          width: 736px;
+          height: 275px;
+        }
+      }
 
       p {
         margin: auto;
         font-family: "Ultra", sans-serif;
-        font-style: normal;
-        font-weight: 400;
         font-size: 32px;
+        font-weight: bold;
         line-height: 40px;
         text-align: center;
         text-transform: uppercase;
@@ -535,4 +565,12 @@ section#category-section {
       }
     }
   }
+}
+
+// ------------ top-menu section ------------
+
+section#top-menu-section {
+  background-color: $title-color;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
