@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 150%;
   text-align: center;
   color: #ffebb7;
@@ -387,7 +387,6 @@ section#share-recipe-section div#container-card-share-recipe figcaption {
 }
 @media screen and (min-width: 950px) {
   section#share-recipe-section div#container-card-share-recipe figcaption {
-    width: 400px;
     height: auto;
   }
 }
@@ -522,7 +521,7 @@ section#category-section div#container-category-section figcaption p {
 section#top-menu-section {
   background-color: #ffe7ab;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 section#top-menu-section h5.title-section-top-menu {
   padding: 5%;
@@ -588,7 +587,9 @@ section#top-menu-section div#container-card-top-menu-section div.card-slide-top-
 footer {
   background-color: #e8652e;
   padding-top: 40px;
-  height: 800px;
+  padding-bottom: 80px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 footer hr#hr-top {
   margin-bottom: 40px;
@@ -603,29 +604,45 @@ footer p#title-newletter {
   margin-bottom: 30px;
 }
 footer form {
-  position: absolute;
-}
-footer input#input-newletter {
   position: relative;
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 950px) {
+  footer form {
+    width: 500px;
+  }
+}
+footer form input#input-newletter {
   display: block;
   width: 280px;
   height: 68px;
   margin: 0 auto;
   padding: 15px;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
 }
-footer input#input-newletter::-moz-placeholder {
+@media screen and (min-width: 950px) {
+  footer form input#input-newletter {
+    width: 500px;
+  }
+}
+footer form input#input-newletter::-moz-placeholder {
   color: #fff;
 }
-footer input#input-newletter::placeholder {
+footer form input#input-newletter::placeholder {
   color: #fff;
 }
-footer input#btn-subscribe {
-  bottom: 150px;
-  left: 250px;
+footer form input#btn-subscribe {
+  position: absolute;
+  top: 15px;
+  right: 22px;
+  width: 120px;
+  display: block;
+  margin: 0 auto;
   padding: 10px 20px;
   background-color: #243763;
   color: #fff;
@@ -636,4 +653,50 @@ footer hr#hr-bottom {
   margin-top: 40px;
   margin-bottom: 50px;
   color: #fff;
+}
+footer div#footer-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 950px) {
+  footer div#footer-bottom {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+footer div#footer-bottom div#footer-description {
+  max-width: 400px;
+}
+footer div#footer-bottom div#footer-description span {
+  font-family: "Ultra";
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #fff;
+}
+footer div#footer-bottom div#footer-description p {
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+footer div#footer-bottom ul {
+  margin-bottom: 30px;
+}
+footer div#footer-bottom ul li {
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 5px;
+}
+footer div#footer-bottom ul li:first-child {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
 }/*# sourceMappingURL=style.css.map */
