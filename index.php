@@ -5,7 +5,7 @@ require_once './vendor/autoload.php';
 $router = new AltoRouter();
 $router->setBasePath('/projet/burger-dev');
 
-$router->map('GET', '/', 'RecipeController#homePage', 'home');
+$router->map('GET', '/', 'HomeController#homePage', 'home');
 
 $match = $router->match();
 

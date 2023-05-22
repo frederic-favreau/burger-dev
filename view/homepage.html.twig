@@ -28,80 +28,21 @@ endblock %} {% block content %}
 
   <section id="last-recipe-section">
     <h2 id="title-last-recipe-section">Dernières recettes bugers</h2>
+    {% for recipe in recipes %}
     <div id="container-card-last-recipe" class="row-limit-size">
       <div id="card-last-recipe">
         <figcaption>
           <img src="./img/picto/pict-burger.svg" alt="burger" />
         </figcaption>
         <div class="description-card">
-          <h3 id="title-description-card">Titre ici</h3>
+          <h3 id="title-description-card">{{ recipe.name }}</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            voluptatibus!
-          </p>
-        </div>
-      </div>
-      <div id="card-last-recipe">
-        <figcaption>
-          <img src="./img/picto/pict-burger.svg" alt="burger" />
-        </figcaption>
-        <div class="description-card">
-          <h3 id="title-description-card">Titre ici</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            voluptatibus!
-          </p>
-        </div>
-      </div>
-      <div id="card-last-recipe">
-        <figcaption>
-          <img src="./img/picto/pict-burger.svg" alt="burger" />
-        </figcaption>
-        <div class="description-card">
-          <h3 id="title-description-card">Titre ici</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            voluptatibus!
-          </p>
-        </div>
-      </div>
-      <div id="card-last-recipe">
-        <figcaption>
-          <img src="./img/picto/pict-burger.svg" alt="burger" />
-        </figcaption>
-        <div class="description-card">
-          <h3 id="title-description-card">Titre ici</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            voluptatibus!
-          </p>
-        </div>
-      </div>
-      <div id="card-last-recipe">
-        <figcaption>
-          <img src="./img/picto/pict-burger.svg" alt="burger" />
-        </figcaption>
-        <div class="description-card">
-          <h3 id="title-description-card">Titre ici</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            voluptatibus!
-          </p>
-        </div>
-      </div>
-      <div id="card-last-recipe">
-        <figcaption>
-          <img src="./img/picto/pict-burger.svg" alt="burger" />
-        </figcaption>
-        <div class="description-card">
-          <h3 id="title-description-card">Titre ici</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            voluptatibus!
+            {{ recipe.description }}
           </p>
         </div>
       </div>
     </div>
+    {% endfor %}
   </section>
 
   {# ---------- share-recipe section ---------- #}

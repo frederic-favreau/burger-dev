@@ -7,7 +7,7 @@ abstract class Model
     {
 
         try {
-            self::$db = new PDO('mysql:host=localhost;dbname=burger_dev;charset=utf8', 'root');
+            self::$db = new PDO('mysql:host=localhost;dbname=burger-dev;charset=utf8', 'root');
         } catch (PDOException $e) {
             echo "Erreur :" . $e->getMessage();
         }

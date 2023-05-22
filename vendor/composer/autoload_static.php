@@ -42,11 +42,13 @@ class ComposerStaticInit53797d8e81503f0b7342e733925464b1
         'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
         'Category' => __DIR__ . '/../..' . '/class/Category.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Controller' => __DIR__ . '/../..' . '/controller/Controller.php',
         'Favorite' => __DIR__ . '/../..' . '/class/Favorite.php',
+        'HomeController' => __DIR__ . '/../..' . '/controller/HomeController.php',
         'Ingredient' => __DIR__ . '/../..' . '/class/Ingredient.php',
         'Model' => __DIR__ . '/../..' . '/model/Model.php',
         'Recipe' => __DIR__ . '/../..' . '/class/Recipe.php',
-        'RecipeController' => __DIR__ . '/../..' . '/controller/RecipeController.php',
+        'RecipeModel' => __DIR__ . '/../..' . '/model/RecipeModel.php',
         'User' => __DIR__ . '/../..' . '/class/User.php',
     );
 
