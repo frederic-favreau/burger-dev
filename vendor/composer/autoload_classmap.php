@@ -15,6 +15,7 @@ return array(
     'Ingredient' => $baseDir . '/class/Ingredient.php',
     'Model' => $baseDir . '/model/Model.php',
     'Recipe' => $baseDir . '/class/Recipe.php',
+    'RecipeController' => $baseDir . '/controller/RecipeController.php',
     'RecipeModel' => $baseDir . '/model/RecipeModel.php',
     'User' => $baseDir . '/class/User.php',
 );

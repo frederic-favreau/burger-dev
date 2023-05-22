@@ -28,8 +28,8 @@ endblock %} {% block content %}
 
   <section id="last-recipe-section">
     <h2 id="title-last-recipe-section">Dernières recettes bugers</h2>
-    {% for recipe in recipes %}
     <div id="container-card-last-recipe" class="row-limit-size">
+      {% for recipe in recipes %}
       <div id="card-last-recipe">
         <figcaption>
           <img src="./img/picto/pict-burger.svg" alt="burger" />
@@ -41,8 +41,8 @@ endblock %} {% block content %}
           </p>
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </section>
 
   {# ---------- share-recipe section ---------- #}

@@ -51,11 +51,11 @@ class Recipe
     {
         return $this->publication_date;
     }
-    public function getRecipeId()
+    public function getRecipe_id()
     {
         return $this->recipeId;
     }
-    public function getUserId()
+    public function getUser_id()
     {
         return $this->userId;
     }
@@ -81,11 +81,11 @@ class Recipe
     {
         $this->numberOfServings = $numberOfServings;
     }
-    public function setRecipeId(int $recipeId)
+    public function setRecipe_id(int $recipeId)
     {
         $this->recipeId = $recipeId;
     }
-    public function setUserId(int $userId)
+    public function setUser_id(int $userId)
     {
         $this->userId = $userId;
     }
