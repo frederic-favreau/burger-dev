@@ -7,8 +7,6 @@ class HomeController extends Controller
     {
         $recipeModel = new RecipeModel();
         $recipes = $recipeModel->getLastTenRecipes();
-        
-        echo self::getTwig()->render('homepage.html.twig', ['recipes' => $recipes]);
-
+        echo self::getRender('homepage.html.twig', ['recipes' => $recipes]);
     }
 }

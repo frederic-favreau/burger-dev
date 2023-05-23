@@ -1,0 +1,20 @@
+{% extends "template.html.twig" %} 
+
+{% block content %}
+
+<form method="post" action="">
+  <div>
+    <label for="email">Email :</label>
+    <input type="text" id="email" name="email" required />
+  </div>
+
+  <div>
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" name="password" required />
+  </div>
+
+  <div>
+    <button type="submit">Se connecter</button>
+  </div>
+</form>
+{% endblock %}

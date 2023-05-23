@@ -7,6 +7,8 @@ $router->setBasePath('/projet/burger-dev');
 
 $router->map('GET', '/', 'HomeController#homePage', 'home');
 
+$router->map('GET|POST', '/connexion', 'UserController#createUser', 'baseLog');
+
 $match = $router->match();
 
 if (is_array($match)) {

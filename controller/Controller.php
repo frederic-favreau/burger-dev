@@ -22,31 +22,25 @@ abstract class Controller
         return self::$twig;
     }
 
-    // protected static function setRender(string $template, $datas)
-    // {
-    //     global $router;
-    //     //LINKS
-    //     $link = $router->generate('baseRecipe');
-    //     $link2 = $router->generate('baseCats');
-    //     $link3 = $router->generate('baseLog');
-    //     // CATEGORIES
-    //     $categories  = new CategoryModel();
-    //     $cats  = $categories->getAllCategory();
+    protected static function setRender(string $template, $datas)
+    {
+        global $router;
+        //LINKS
+        // $link = $router->generate('baseRecipe');
+        $link3 = $router->generate('baseLog');
 
-    //     $new = [
-    //         'cats' => $cats,
-    //         'link' => $link,
-    //         'link2' => $link2,
-    //         'link3' => $link3
-    //     ] + $datas;
-    //     echo self::getTwig()->render($template, $new);
-    // }
+        $new = [
+            // 'link' => $link,
+            'link3' => $link3
+        ] + $datas;
+        echo self::getTwig()->render($template, $new);
+    }
 
-    // protected static function getRender($template, $datas)
-    // {
-    //     if (self::$render === null) {
-    //         self::setRender($template, $datas);
-    //     }
-    //     return self::$render;
-    // }
+    protected static function getRender($template, $datas)
+    {
+        if (self::$render === null) {
+            self::setRender($template, $datas);
+        }
+        return self::$render;
+    }
 }
