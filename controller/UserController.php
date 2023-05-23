@@ -10,7 +10,7 @@ class UserController extends Controller
             $firstname = $_POST['firstname'];
             $lastname = $_POST['lastname'];
             $email = filter_var($_POST["email"], FILTER_VALIDATE_EMAIL);
-            $rawPass = $_POST['psw'];
+            $rawPass = $_POST['password'];
             $password = password_hash($rawPass, PASSWORD_DEFAULT);
 
             $userData = new User([
@@ -28,8 +28,8 @@ class UserController extends Controller
 
         } else {
             global $router;
-            $link = $router->generate('baseLog');
-            echo self::getRender('signpage.html.twig', ['link' => $link]);
+            $link = $router->generate('registration');
+            echo self::getRender('registration.html.twig', ['link' => $link]);
         }
     }
 
@@ -49,11 +49,11 @@ class UserController extends Controller
 
             if($user){
                 $password = $_POST['password'];
-                
+                // var_dump(password_hash('123', PASSWORD_DEFAULT));
             if(password_verify($password, $user->getPassword())){
             $_SESSION['uid'] = $user->getUser_id();
             $_SESSION['email'] = $user->getEmail();
-            
+            var_dump('tito');
             header('Location: ./');
             exit();
 

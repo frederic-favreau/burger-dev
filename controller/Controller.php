@@ -27,10 +27,11 @@ abstract class Controller
         global $router;
         //LINKS
         // $link = $router->generate('baseRecipe');
+        $link2 = $router->generate('registration');
         $link3 = $router->generate('login');
 
         $new = [
-            // 'link' => $link,
+            'link2' => $link2,
             'link3' => $link3
         ] + $datas;
         echo self::getTwig()->render($template, $new);

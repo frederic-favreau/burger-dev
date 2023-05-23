@@ -12,8 +12,9 @@ $router->map('GET', '/', 'HomeController#homePage', 'home');
 $router->map('GET|POST' , '/login' , 'UserController#login' , 'login');
 $router->map('GET' , '/logout' , 'UserController#logout' , 'logout');
 
+$router->map('GET|POST' , '/registration' , 'UserController#createUser' , 'registration');
+
 $match = $router->match();
-var_dump($match);
 
 if (is_array($match)) {
     list($controller, $action) = explode('#', $match['target']);
