@@ -27,7 +27,7 @@ abstract class Controller
         global $router;
         //LINKS
         // $link = $router->generate('baseRecipe');
-        $link3 = $router->generate('baseLog');
+        $link3 = $router->generate('login');
 
         $new = [
             // 'link' => $link,

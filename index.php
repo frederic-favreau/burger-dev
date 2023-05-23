@@ -1,4 +1,5 @@
 <?php
+        session_start();
 require_once './vendor/altorouter/altorouter/AltoRouter.php';
 require_once './vendor/autoload.php';
 
@@ -7,9 +8,12 @@ $router->setBasePath('/projet/burger-dev');
 
 $router->map('GET', '/', 'HomeController#homePage', 'home');
 
-$router->map('GET|POST', '/connexion', 'UserController#createUser', 'baseLog');
+
+$router->map('GET|POST' , '/login' , 'UserController#login' , 'login');
+$router->map('GET' , '/logout' , 'UserController#logout' , 'logout');
 
 $match = $router->match();
+var_dump($match);
 
 if (is_array($match)) {
     list($controller, $action) = explode('#', $match['target']);

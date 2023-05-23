@@ -33,49 +33,45 @@ class UserController extends Controller
         }
     }
 
-    public function loginUser()
+    public function login()
     {
-        session_start();
         global $router;
 
-        if (isset($_POST['email'], $_POST['password'])) {
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-
+        if(!$_POST){
+            echo self::getRender('signpage.html.twig' , []); }
+            else {
+             $email = $_POST['email'];
+             $password = $_POST['password'];
+            
             $model = new UserModel();
-            $user = $model->getUserByEmail($email);
+            $user = $model->getOneUserByEmail($email); 
+            var_dump($user);
 
-            if ($user && password_verify($password, $user->getPassword())) {
-                // Start the user session
-                $_SESSION['email'] = $user->getEmail();
-                $_SESSION['connect'] = true;
+            if($user){
+                $password = $_POST['password'];
+                
+            if(password_verify($password, $user->getPassword())){
+            $_SESSION['uid'] = $user->getUser_id();
+            $_SESSION['email'] = $user->getEmail();
+            
+            header('Location: ./');
+            exit();
 
-                // Redirect to the home page or any other page you want
-                header('Location: ' . $router->generate('home'));
-                exit();
-            } else {
-                $message = "Invalid email or password.";
+            }else{
+            echo 'Courage mec, ne lâche pas !! bizz';
             }
-        } else {
-            $message = "Please enter a username and password.";
-        }
-
-        $link = $router->generate('connect');
-
-        // Render the login page with an error message if applicable
-        echo self::getRender('signpage.html.twig', ['message' => $message, 'signin' => $link]);
+            }else{
+            $message = "Email / mot de passe incorrect !";
+            echo self::getrender('signpage.html.twig', [ 'message' => $message]); }
+            }
     }
-
-
-
 
     public function logout()
     {
         session_start();
         session_destroy();
 
-        global $router;
-        header('Location: ' . $router->generate('home'));
+        header('Location: ./' );
         exit();
     }
 }

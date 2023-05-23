@@ -20,19 +20,14 @@ class UserModel extends Model
         $req->closeCursor();
     }
 
-    public function getUserByEmail($email)
+    public function getOneUserByEmail(string $email)
     {
-        $req = $this->getDb()->prepare("SELECT `id`, `password`, `firstname`, `lastname`, `email` FROM `user` WHERE `email` = :email");
+        $req = $this->getDb()->prepare("SELECT `user_id`, `password`, `firstname`, `lastname`, `email` FROM `user` WHERE `email` = :email");
         $req->bindValue(":email", $email, PDO::PARAM_STR);
         $req->execute();
 
-        $userData = $req->fetch(PDO::FETCH_ASSOC);
-        $req->closeCursor();
+        return $req->rowCount() === 1 ? new User($req->fetch(PDO::FETCH_ASSOC)) : false;
 
-        if ($userData) {
-            return new User([
-                'email' => $userData['email']
-            ]);
-        }
+        $req->closeCursor();
     }
 }
