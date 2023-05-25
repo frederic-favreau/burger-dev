@@ -1,6 +1,5 @@
 {% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %}
-{% block stylesheet %}<link href="{{ style }}CSS/style.css" rel="stylesheet" />{%
-endblock %} {% block content %}
+ {% block content %}
 
 <main>
   {# ---------- Hero section ---------- #}
@@ -15,11 +14,11 @@ endblock %} {% block content %}
           processed to create a juicy and flavorful taste.
         </p>
         <a href="#" id="btn-show-recipe"
-          ><img src="./img/picto/bag-2.svg" alt="Sac" />voir les recettes</a
+          ><img src="{{ asset('./img/picto/bag-2.svg')}}" alt="Sac" />voir les recettes</a
         >
       </div>
       <figcaption id="item-right-hero">
-        <img src="./img/burger-mobile.png" alt="Burger" />
+        <img src="{{ asset('/img/burger-mobile.png')}}" alt="Burger" />
       </figcaption>
     </div>
   </section>
@@ -33,7 +32,7 @@ endblock %} {% block content %}
         <a href="{{ path('baseRecipe') }}{{ recipe.recipeId }}">
             <div id="card-last-recipe">
                 <figcaption>
-                    <img src="./img/picto/pict-burger.svg" alt="burger" />
+                    <img src="{{ asset('/img/picto/pict-burger.svg')}}" alt="burger" />
                 </figcaption>
                 <div class="description-card">
                     <h3 id="title-description-card">{{ recipe.name }}</h3>
@@ -53,7 +52,7 @@ endblock %} {% block content %}
   <section id="share-recipe-section">
     <div id="container-card-share-recipe" class="row-limit-size">
       <figcaption>
-        <img src="./img/picto/burger-img.png" alt="Restaurant" />
+        <img src="{{ asset('/img/picto/burger-img.png')}}" alt="Restaurant" />
       </figcaption>
       <div id="share-recipe-descrption">
         <h4>
@@ -107,7 +106,7 @@ endblock %} {% block content %}
     <div id="container-card-top-menu-section" class="row-limit-size">
       <div class="card-slide-top-menu">
         <figcaption>
-          <img src="./img/picto/pict-burger.svg" alt="burger" />
+          <img src="{{ asset('/img/picto/pict-burger.svg')}}" alt="burger" />
         </figcaption>
         <div class="description-card-slide">
           <span class="title-card-slide">Lorem, ipsum dolor</span>

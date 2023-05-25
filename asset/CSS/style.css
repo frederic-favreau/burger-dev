@@ -382,7 +382,7 @@ section#share-recipe-section div#container-card-share-recipe figcaption {
   position: relative;
   width: 280px;
   height: 355px;
-  background-image: url(../../img/picto/Image-pict-food.jpg);
+  background-image: url(../img/picto/Image-pict-food.jpg);
   background-repeat: no-repeat;
   margin: 0 auto 30px;
   border-radius: 32px;
@@ -489,7 +489,7 @@ section#category-section div#container-category-section figcaption {
   width: 280px;
   height: 280px;
   margin: 15px;
-  background-image: url(../../img/img-test.jpg);
+  background-image: url(../img/img-test.jpg);
   background-size: cover;
   border-radius: 32px;
 }
