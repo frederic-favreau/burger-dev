@@ -7,7 +7,7 @@ class Recipe
     private $preparationTime;
     private $cookingTime;
     private $numberOfServings;
-    private $publication_date;
+    private $publicationDate;
     private $recipeId;
     private $author;
 
@@ -52,11 +52,11 @@ class Recipe
     {
         return $this->numberOfServings;
     }
-    public function getPublication_date()
+    public function getPublicationDate()
     {
-        return $this->publication_date;
+        return $this->publicationDate;
     }
-    public function getRecipe_id()
+    public function getRecipeId()
     {
         return $this->recipeId;
     }
@@ -90,7 +90,11 @@ class Recipe
     {
         $this->numberOfServings = $numberOfServings;
     }
-    public function setRecipe_id(int $recipeId)
+    public function setPublicationDate($publicationDate)
+    {
+        $this->publicationDate = $publicationDate;
+    }
+    public function setRecipeId(int $recipeId)
     {
         $this->recipeId = $recipeId;
     }

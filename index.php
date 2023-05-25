@@ -8,6 +8,8 @@ $router->setBasePath('/projet/burger-dev');
 
 $router->map('GET', '/', 'HomeController#homePage', 'home');
 
+$router->map('GET', '/recipe/', '', 'baseRecipe');
+$router->map('GET', '/recipe/[i:id]', 'RecipeController#getOne', '');
 
 $router->map('GET|POST' , '/login' , 'UserController#login' , 'login');
 $router->map('GET' , '/logout' , 'UserController#logout' , 'logout');

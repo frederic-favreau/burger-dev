@@ -51,7 +51,7 @@ class UserController extends Controller
                 $password = $_POST['password'];
                 // var_dump(password_hash('123', PASSWORD_DEFAULT));
             if(password_verify($password, $user->getPassword())){
-            $_SESSION['uid'] = $user->getUser_id();
+            $_SESSION['uid'] = $user->getUid();
             $_SESSION['email'] = $user->getEmail();
             var_dump('tito');
             header('Location: ./');
