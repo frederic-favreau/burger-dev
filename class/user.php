@@ -5,7 +5,7 @@ class User
     private $firstname;
     private $email;
     private $password;
-    private $userId;
+    private $uid;
 
     public function __construct(array $datas)
     {
@@ -40,9 +40,9 @@ class User
     {
         return $this->password;
     }
-    public function getUser_id()
+    public function getUid()
     {
-        return $this->userId;
+        return $this->uid;
     }
 
     //SETTERS
@@ -58,9 +58,9 @@ class User
     {
         $this->email = $email;
     }
-    public function setUser_id(int $userId)
+    public function setUid(int $uid)
     {
-        $this->userId = $userId;
+        $this->uid = $uid;
     }
     public function setPassword(string $password)
     {

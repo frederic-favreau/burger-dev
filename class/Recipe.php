@@ -3,12 +3,13 @@ class Recipe
 {
     private $name;
     private $description;
+    private $content;
     private $preparationTime;
     private $cookingTime;
     private $numberOfServings;
     private $publication_date;
     private $recipeId;
-    private $userId;
+    private $author;
 
     public function __construct(array $datas)
     {
@@ -35,6 +36,10 @@ class Recipe
     {
         return $this->description;
     }
+    public function getContent()
+    {
+        return $this->content;
+    }
     public function getPreparationTime()
     {
         return $this->preparationTime;
@@ -55,9 +60,9 @@ class Recipe
     {
         return $this->recipeId;
     }
-    public function getUser_id()
+    public function getAuthor()
     {
-        return $this->userId;
+        return $this->author;
     }
 
     //SETTERS
@@ -69,11 +74,15 @@ class Recipe
     {
         $this->description = $description;
     }
-    public function setPreparationTime(DateTime $preparationTime)
+    public function setContent(string $content)
+    {
+        $this->content = $content;
+    }
+    public function setPreparationTime(string $preparationTime)
     {
         $this->preparationTime = $preparationTime;
     }
-    public function setCookingTime(DateTime $cookingTime)
+    public function setCookingTime(string $cookingTime)
     {
         $this->cookingTime = $cookingTime;
     }
@@ -85,8 +94,8 @@ class Recipe
     {
         $this->recipeId = $recipeId;
     }
-    public function setUser_id(int $userId)
+    public function setAuthor(int $author)
     {
-        $this->userId = $userId;
+        $this->author = $author;
     }
 }

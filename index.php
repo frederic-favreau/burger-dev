@@ -14,6 +14,8 @@ $router->map('GET' , '/logout' , 'UserController#logout' , 'logout');
 
 $router->map('GET|POST' , '/registration' , 'UserController#createUser' , 'registration');
 
+$router->map('GET|POST', '/addrecipe', 'RecipeController#createRecipe', 'recipeAdd');
+
 $match = $router->match();
 
 if (is_array($match)) {

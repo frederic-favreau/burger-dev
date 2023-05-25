@@ -14,27 +14,25 @@ abstract class Controller
         return self::$loader;
     }
 
-    protected static function getTwig()
-    {
+    protected static function getTwig(){
         if (self::$twig === null) {
-            self::$twig = new \Twig\Environment(self::getLoader(), ['cache' => false]);
+          $loader = self::getLoader();
+          self::$twig = new \Twig\Environment($loader);
+          self::$twig->addGlobal('session', $_SESSION);
+          self::$twig->addGlobal('get', $_GET);
+        
+          self::$twig->addFunction(new \Twig\TwigFunction('path', function ($routeName) {
+          global $router;
+          return $router->generate($routeName);
+          }));
         }
-        return self::$twig;
-    }
+         return self::$twig;
+        }
 
     protected static function setRender(string $template, $datas)
     {
-        global $router;
         //LINKS
-        // $link = $router->generate('baseRecipe');
-        $link2 = $router->generate('registration');
-        $link3 = $router->generate('login');
-
-        $new = [
-            'link2' => $link2,
-            'link3' => $link3
-        ] + $datas;
-        echo self::getTwig()->render($template, $new);
+        echo self::getTwig()->render($template, $datas);
     }
 
     protected static function getRender($template, $datas)

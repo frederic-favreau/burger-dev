@@ -15,4 +15,20 @@ class RecipeModel extends Model
 
         return $recipes;
     }
+
+    public function addRecipe (Recipe $recipe){
+        $author = $recipe->getAuthor();
+        $name = $recipe->getName();
+        $preparationTime = $recipe->getPreparationTime();
+        $content = $recipe->getContent();
+
+        $req = $this->getDb()->prepare('INSERT INTO `recipe`(`author`, `name`, `preparationTime`, `content`) VALUES (:author, :name, :preparationTime, :content)');
+
+        $req->bindParam('author', $author, PDO::PARAM_INT);
+        $req->bindParam('name', $name, PDO::PARAM_STR);
+        $req->bindParam('preparationTime', $preparationTime, PDO::PARAM_STR);
+        $req->bindParam('content', $content, PDO::PARAM_STR);
+
+        $req->execute();
+    }
 }

@@ -164,6 +164,10 @@ header {
             }
           }
 
+          #picto-profile:hover + #sub-menu {
+            display: block;
+          }
+
           li#picto-burger {
             display: block;
 

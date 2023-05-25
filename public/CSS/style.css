@@ -148,6 +148,9 @@ header nav div#container-nav-top div#menu-picto ul li#picto-profile {
     display: block;
   }
 }
+header nav div#container-nav-top div#menu-picto ul #picto-profile:hover + #sub-menu {
+  display: block;
+}
 header nav div#container-nav-top div#menu-picto ul li#picto-burger {
   display: block;
 }
