@@ -53,7 +53,8 @@ class UserController extends Controller
             if(password_verify($password, $user->getPassword())){
             $_SESSION['uid'] = $user->getUid();
             $_SESSION['email'] = $user->getEmail();
-            var_dump('tito');
+            $_SESSION['connect'] = true;
+                
             header('Location: ./');
             exit();
 

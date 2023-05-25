@@ -86,9 +86,12 @@ h5 {
 }
 
 header {
-  mix-blend-mode: overlay;
+  z-index: 99;
+  position: sticky;
+  top: 0;
   opacity: 1;
   background-image: url(../img/burger-mobile.png);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 header nav {
   border-bottom: 0.5px solid #ffe5a2;
@@ -138,6 +141,15 @@ header nav div#container-nav-top div#menu-picto {
 header nav div#container-nav-top div#menu-picto ul {
   display: flex;
 }
+header nav div#container-nav-top div#menu-picto ul a {
+  font-family: "Ultra";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffe5a2;
+}
 header nav div#container-nav-top div#menu-picto ul li#picto-favorite,
 header nav div#container-nav-top div#menu-picto ul li#picto-profile {
   display: none;
@@ -147,9 +159,6 @@ header nav div#container-nav-top div#menu-picto ul li#picto-profile {
   header nav div#container-nav-top div#menu-picto ul li#picto-profile {
     display: block;
   }
-}
-header nav div#container-nav-top div#menu-picto ul #picto-profile:hover + #sub-menu {
-  display: block;
 }
 header nav div#container-nav-top div#menu-picto ul li#picto-burger {
   display: block;

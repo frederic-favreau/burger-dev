@@ -96,10 +96,12 @@ h5 {
 // ------------ header section ------------
 
 header {
-  // background-blend-mode:overlay ;
-  mix-blend-mode: overlay;
+  z-index: 99;
+  position: sticky;
+  top: 0;
   opacity: 1;
   background-image: url(../img/burger-mobile.png);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   nav {
     border-bottom: 0.5px solid $creamColor;
@@ -155,6 +157,16 @@ header {
         ul {
           display: flex;
 
+          a {
+            font-family: "Ultra";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: $creamColor;
+          }
+
           li#picto-favorite,
           li#picto-profile {
             display: none;
@@ -162,10 +174,6 @@ header {
             @media screen and (min-width: 950px) {
               display: block;
             }
-          }
-
-          #picto-profile:hover + #sub-menu {
-            display: block;
           }
 
           li#picto-burger {

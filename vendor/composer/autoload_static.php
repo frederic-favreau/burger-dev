@@ -50,6 +50,8 @@ class ComposerStaticInit53797d8e81503f0b7342e733925464b1
         'Recipe' => __DIR__ . '/../..' . '/class/Recipe.php',
         'RecipeController' => __DIR__ . '/../..' . '/controller/RecipeController.php',
         'RecipeModel' => __DIR__ . '/../..' . '/model/RecipeModel.php',
+        'SearchController' => __DIR__ . '/../..' . '/controller/SearchController.php',
+        'SearchModel' => __DIR__ . '/../..' . '/model/SearchModel.php',
         'User' => __DIR__ . '/../..' . '/class/User.php',
         'UserController' => __DIR__ . '/../..' . '/controller/UserController.php',
         'UserModel' => __DIR__ . '/../..' . '/model/UserModel.php',

@@ -16,6 +16,8 @@ $router->map('GET' , '/logout' , 'UserController#logout' , 'logout');
 
 $router->map('GET|POST' , '/registration' , 'UserController#createUser' , 'registration');
 
+$router->map('GET', '/search', 'SearchController#searchResult', 'search');
+
 $router->map('GET|POST', '/addrecipe', 'RecipeController#createRecipe', 'recipeAdd');
 
 $match = $router->match();

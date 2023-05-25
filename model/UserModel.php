@@ -22,7 +22,7 @@ class UserModel extends Model
 
     public function getOneUserByEmail(string $email)
     {
-        $req = $this->getDb()->prepare("SELECT `user_id`, `password`, `firstname`, `lastname`, `email` FROM `user` WHERE `email` = :email");
+        $req = $this->getDb()->prepare("SELECT `uid`, `password`, `firstname`, `lastname`, `email` FROM `user` WHERE `email` = :email");
         $req->bindValue(":email", $email, PDO::PARAM_STR);
         $req->execute();
 

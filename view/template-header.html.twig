@@ -7,20 +7,32 @@
             <div id="menu-nav">
                 <ul>
                     <li><a href="{{ path('home') }}">Accueil</a></li>
-                    <li><a href="#">Recherche</a></li>
+                    <li><form action="{{ path('search') }}" method="GET">
+                        <input type="search" name="search" placeholder="Search Recipes . . .">
+                        <button type="submit">X</button>
+            </form></li>
                     <li><a href="#">Recettes</a></li>
                     <li><a href="{{ path('recipeAdd') }}">Ajouts</a></li>
                 </ul>
             </div>
             <div id="menu-picto">
                 <ul>
-                    <li id="picto-favorite"><a href="{{ path('registration') }}">
+                    <li id="picto-favorite"><a href="#">
                             <img src="{{ asset('/img/picto/shopping-cart.svg') }}" alt="Vos favories">
                         </a>
                         </li>
                     <li id="picto-profile"><a href="{{ path('login') }}">
                             <img src="{{ asset('./img/picto/picto-profile.svg')}}" alt="Votre profil">
                         </a>
+                        <li class="dropdown">
+                            <ul class="submenu">
+                                {% if session.connect %}
+                              <li><a href="{{ path('logout') }}">Se déconnecter</a></li>
+                              {% else %}
+                              <li><a href="{{ path('registration') }}">S'enregistrer</a></li>
+                              {% endif %}
+                            </ul>
+                          </li>
                     </li>
                     <li id="picto-burger"><a href="#">
                         <div id="container-menu-buger">
