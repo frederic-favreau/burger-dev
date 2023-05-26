@@ -1,10 +1,15 @@
-{% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %}
- {% block content %}
+{% extends "template.html.twig" %} {% block title %}Burger dev {% endblock %} {%
+block content %}
 
 <main>
   {# ---------- Hero section ---------- #}
 
   <section id="hero-section">
+    <img
+      src="{{ asset('/img/walesca/IMG_2989-removebg-preview.png') }}"
+      alt="Walesca"
+      id="item-right-hero"
+    />
     <div id="container-hero-section" class="row-limit-size">
       <div id="item-left-hero">
         <span>Recettes Burger</span>
@@ -14,11 +19,12 @@
           processed to create a juicy and flavorful taste.
         </p>
         <a href="#" id="btn-show-recipe"
-          ><img src="{{ asset('./img/picto/bag-2.svg')}}" alt="Sac" />voir les recettes</a
+          ><img src="{{ asset('./img/picto/bag-2.svg') }}" alt="Sac" />voir les
+          recettes</a
         >
       </div>
       <figcaption id="item-right-hero">
-        <img src="{{ asset('/img/burger-mobile.png')}}" alt="Burger" />
+        <img src="{{ asset('/img/burger-mobile.png') }}" alt="Burger" />
       </figcaption>
     </div>
   </section>
@@ -28,31 +34,30 @@
   <section id="last-recipe-section">
     <h2 id="title-last-recipe-section">Dernières recettes bugers</h2>
     <div id="container-card-last-recipe" class="row-limit-size">
-        {% for recipe in recipes %}
-        <a href="{{ path('baseRecipe') }}{{ recipe.recipeId }}">
-            <div id="card-last-recipe">
-                <figcaption>
-                    <img src="{{ asset('/img/picto/pict-burger.svg')}}" alt="burger" />
-                </figcaption>
-                <div class="description-card">
-                    <h3 id="title-description-card">{{ recipe.name }}</h3>
-                    <p>
-                        {{ recipe.description }}
-                    </p>
-                </div>
-            </div>
-        </a>
-        {% endfor %}
+      {% for recipe in recipes %}
+      <a href="{{ path('baseRecipe') }}{{ recipe.recipeId }}">
+        <div id="card-last-recipe">
+          <figcaption>
+            <img src="{{ asset('/img/picto/pict-burger.svg') }}" alt="burger" />
+          </figcaption>
+          <div class="description-card">
+            <h3 id="title-description-card">{{ recipe.name }}</h3>
+            <p>
+              {{ recipe.description }}
+            </p>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
     </div>
-</section>
-
+  </section>
 
   {# ---------- share-recipe section ---------- #}
 
   <section id="share-recipe-section">
     <div id="container-card-share-recipe" class="row-limit-size">
       <figcaption>
-        <img src="{{ asset('/img/picto/burger-img.png')}}" alt="Restaurant" />
+        <img src="{{ asset('/img/picto/burger-img.png') }}" alt="Restaurant" />
       </figcaption>
       <div id="share-recipe-descrption">
         <h4>
@@ -102,17 +107,16 @@
   {# ---------- top-menu section ---------- #}
 
   <section id="top-menu-section">
-    <h5 class="title-section-top-menu">top menu !!</h5>
+    <h5 class="title-section-top-menu">top cheffe!!</h5>
     <div id="container-card-top-menu-section" class="row-limit-size">
       <div class="card-slide-top-menu">
         <figcaption>
-          <img src="{{ asset('/img/picto/pict-burger.svg')}}" alt="burger" />
+          <img src="{{ asset('/img/walesca/WaNom.png') }}" alt="burger" />
         </figcaption>
         <div class="description-card-slide">
-          <span class="title-card-slide">Lorem, ipsum dolor</span>
+          <span class="title-card-slide">Walesca</span>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
-            quidem sit ipsum nostrum.
+            Elle partage tout ! Même un peu trop des fois en cours... 
           </p>
           <a href="#">Voir le menu</a>
         </div>
@@ -120,4 +124,6 @@
     </div>
   </section>
 </main>
-{% endblock %}
+
+{% endblock %} 
+

@@ -40,7 +40,6 @@ abstract class Controller
 
     protected static function setRender(string $template, $datas)
     {
-        //LINKS
         echo self::getTwig()->render($template, $datas);
     }
 

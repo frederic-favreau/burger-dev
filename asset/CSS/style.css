@@ -196,8 +196,15 @@ header nav div#container-nav-top div#menu-picto ul li a div#container-menu-buger
 }
 
 section#hero-section {
+  position: relative;
   background-color: #243763;
   padding-bottom: 100px;
+}
+section#hero-section img#item-right-hero {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 @media screen and (min-width: 950px) {
   section#hero-section {
@@ -555,7 +562,7 @@ section#top-menu-section div#container-card-top-menu-section div.card-slide-top-
 section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu figcaption img {
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: -30%;
   transform: translate(-50%, -50%);
 }
 section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu div.description-card-slide {
@@ -574,7 +581,7 @@ section#top-menu-section div#container-card-top-menu-section div.card-slide-top-
 }
 section#top-menu-section div#container-card-top-menu-section div.card-slide-top-menu div.description-card-slide p {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 150%;
   text-align: center;
   margin-top: 15px;

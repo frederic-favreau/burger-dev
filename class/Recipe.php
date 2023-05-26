@@ -98,7 +98,7 @@ class Recipe
     {
         $this->recipeId = $recipeId;
     }
-    public function setAuthor(int $author)
+    public function setAuthor($author)
     {
         $this->author = $author;
     }
